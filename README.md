@@ -6,7 +6,7 @@ Hello Amir Arani! 👋 It's great to meet a fellow tech enthusiast! 🚀 You're 
 - **Association**: Member of the Kashan University Computer Science Association 🌐
 
 ### Skills:
-- **Programming Languages**: Python, C++, java, java script
+- **Programming Languages**: Python, C++, Java, Java script
 - **Frameworks**: Django, Django Rest Framework
 - **Databases**: PostgreSQL, Redis
 - **Message Brokers**: RabbitMQ , Redis
