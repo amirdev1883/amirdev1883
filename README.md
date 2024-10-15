@@ -1,35 +1,18 @@
-<p>
+Hello Amir Arani! 👋 It's great to meet a fellow tech enthusiast! 🚀 You're building quite the impressive skill set in backend development! Here’s a summary of your profile:
 
-# About Me:
-### Hello, welcome to my profile! I'm a Python developer, specifically interested in programming with Django and Django Rest Framework and FastAPI.
+### Amir Arani
+- **University**: Kashan University 🎓
+- **Field of Study**: Computer Science 💻
+- **Association**: Member of the Kashan University Computer Science Association 🌐
 
+### Skills:
+- **Programming Languages**: Python, C++ 
+- **Frameworks**: Django, Django Rest Framework
+- **Databases**: PostgreSQL, Redis
+- **Message Brokers**: RabbitMQ 
+- **Task Queues**: Celery
+- **Containerization**: Docker 🐳
+- **DevOps**: LPIC1, Git, GitHub, GitLab, Nginx
+- **Web Development**: HTML, CSS, JavaScript, Tailwind, Bootstrap
 
-
-
-</p>
-
-<h3>find me here</h3>
-<div>
-    <div class="row">
-        <a href='mailto:amirdev1883@gmail.com'>
-            <img alt="Discord" src="https://img.shields.io/badge/GMAIL-ab373c.svg?style=for-the-badge&logo=gmail&logoColor=orange">
-        </a>
-        <a href='https://telegram.me/Amirdevkh'>
-            <img alt="Discord" src="https://img.shields.io/badge/TELEGRAM-dcf3dc.svg?style=for-the-badge&logo=telegram&logoColor=orange">
-        </a>
-
-  
-</div>
-<hr>
-<div>
-    <div style="margin: 20px;">
-    <h3>My studied fields</h3>
-    <h3>Back-End:</h3>
-        <img style="height:30px;" alt="Discord" src="https://img.shields.io/badge/Python-030903.svg?style=flat&logo=python&logoColor=yellow">
-        <img style="height:30px;" alt="Discord" src="https://img.shields.io/badge/Django-030903.svg?style=flat&logo=django&logoColor=green">
-    <h3>Databases:</h3>
-        <img style="height:30px;" alt="Discord" src="https://img.shields.io/badge/MYSQL-030903.svg?style=flat&logo=mysql&logoColor=blue">
-    <h3>version control:</h3>
-        <img style="height:30px;" alt="Discord" src="https://img.shields.io/badge/Git-030903.svg?style=plasic&logo=git&logoColor=orange">
-        <img style="height:30px;" alt="Discord" src="https://img.shields.io/badge/Github-030903.svg?style=plasic&logo=GitHub&logoColor=orange">
-</div>
+If you have any specific questions, projects you're working on, or anything you want to discuss, feel free to share! 😊💬
