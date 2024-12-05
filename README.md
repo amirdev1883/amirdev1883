@@ -18,8 +18,6 @@ I'm Amir Arani, a passionate backend developer. Currently, I'm a member of the K
 
 🚀 My interests lie in several exciting areas, particularly AI 🤖 and DevOps engineering ⚙️. I'm fascinated by how these technologies can transform our world 🌍 and streamline development processes. I’m always eager to learn more 📚 and explore new technologies!
 
-💬 Feel free to connect if you share similar interests or if you’d like to discuss anything tech-related! 💻
-
 ---
 
 ### 🛠 Skills & Expertise
@@ -71,6 +69,7 @@ I'm Amir Arani, a passionate backend developer. Currently, I'm a member of the K
 
 <img src='https://img.shields.io/badge/-Phone-25D366?logo=whatsapp&logoColor=white'> : +98 9133602554
 
+💬 Feel free to connect if you share similar interests or if you’d like to discuss anything tech-related! 💻
 
 ---
 
