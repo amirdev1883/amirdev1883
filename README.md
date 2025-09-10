@@ -67,7 +67,7 @@ I'm Amir Arani, a passionate backend developer. Currently, I'm a member of the K
 <a href="amirdev1883@gmail.com"><img src='https://img.shields.io/badge/-Gmail-D14836?logo=gmail&logoColor=white'></a>
 <a href="https://www.linkedin.com/in/amiraranii"><img src='https://img.shields.io/badge/-LinkedIn-0077B5?logo=linkedin&logoColor=white'></a>
 
-<img src='https://img.shields.io/badge/-Phone-25D366?logo=whatsapp&logoColor=white'> : +98 9133602554
+<img src='https://img.shields.io/badge/-Phone-25D366?logo=whatsapp&logoColor=white'> : +1 (647) 408 9991
 
 💬 Feel free to connect if you share similar interests or if you’d like to discuss anything tech-related! 💻
 
