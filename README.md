@@ -6,15 +6,10 @@
 
 [//]: # (</p>)
 
-<p align="center">
-  <b>Computer Science Student at Kashan University</b> 🎓 <br>
-  Member of the Kashan University Computer Science Association 🌐
-</p>
 
 ---
 
 ### 📝 About Me
-I'm Amir Arani, a passionate backend developer. Currently, I'm a member of the Kashan University Computer Science Association 🌐, where I collaborate with fellow tech enthusiasts to enhance our skills and foster innovation 💡.
 
 🚀 My interests lie in several exciting areas, particularly AI 🤖 and DevOps engineering ⚙️. I'm fascinated by how these technologies can transform our world 🌍 and streamline development processes. I’m always eager to learn more 📚 and explore new technologies!
 
