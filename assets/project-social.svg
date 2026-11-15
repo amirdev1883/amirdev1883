@@ -1,73 +1,95 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 115" width="880" height="115" role="img" aria-labelledby="title">
+<svg xmlns="http://www.w3.org/2000/svg" width="928" height="124" viewBox="0 0 928 124" role="img" aria-labelledby="title desc">
   <title id="title">Django Social Media</title>
+  <desc id="desc">The Django app connects to a database and a background-job queue.</desc>
   <defs>
-    <linearGradient id="surface" x2="1" y2=".7">
-      <stop stop-color="#101c2d"/>
-      <stop offset=".48" stop-color="#112137"/>
-      <stop offset="1" stop-color="#152e4e"/>
+    <clipPath id="card"><path d="M14 1H913L927 15V107L911 123H1V14Z"/></clipPath>
+    <linearGradient id="background">
+      <stop stop-color="#06130d"/>
+      <stop offset=".57" stop-color="#091c13"/>
+      <stop offset="1" stop-color="#06150f"/>
     </linearGradient>
-    <linearGradient id="frame" x2="1">
-      <stop stop-color="#32465f"/>
-      <stop offset="1" stop-color="#8fd5ff" stop-opacity=".53"/>
-    </linearGradient>
+    <radialGradient id="halo">
+      <stop stop-color="#248a4e" stop-opacity=".31"/>
+      <stop offset="1" stop-color="#248a4e" stop-opacity="0"/>
+    </radialGradient>
     <pattern id="grid" width="15" height="15" patternUnits="userSpaceOnUse">
-      <path d="M15 0H0V15" fill="none" stroke="#8fd5ff" stroke-opacity=".11"/>
-      <circle cx="1" cy="1" r="1" fill="#8fd5ff" opacity=".18"/>
+      <circle cx="1" cy="1" r="1" fill="#58ae79" opacity=".38"/>
     </pattern>
-    <linearGradient id="fade" x2="1">
-      <stop stop-color="#000"/>
-      <stop offset=".32" stop-color="#fff"/>
-      <stop offset="1" stop-color="#fff"/>
-    </linearGradient>
-    <mask id="grid-mask" x="475" y="2" width="404" height="111" maskUnits="userSpaceOnUse">
-      <rect x="475" y="2" width="404" height="111" fill="url(#fade)"/>
-    </mask>
   </defs>
   <style>
-    .pulse { animation: pulse 2.7s ease-in-out infinite alternate; }
-    .scan { animation: scan 3.8s ease-in-out infinite; }
-    .signal { stroke-dasharray: 8 205; animation: signal 2.9s linear infinite; }
-    .late { animation-delay: -1.32s; }
-    @keyframes pulse { from { opacity: .25; } to { opacity: 1; } }
-    @keyframes scan {
-      0% { transform: translateX(0); opacity: 0; }
-      14%, 76% { opacity: .75; }
-      93%, 100% { transform: translateX(177px); opacity: 0; }
-    }
-    @keyframes signal { from { stroke-dashoffset: 12; } to { stroke-dashoffset: -188; } }
+    .rain { transform: translateY(var(--rest)); animation: fall var(--period) linear var(--phase) infinite; }
+    .pulse { fill: none; stroke: #a3ffbe; stroke-width: 2.2; stroke-linecap: round; stroke-dasharray: 10 90; animation: flow var(--period, 4s) linear var(--phase, 0s) infinite; }
+    @keyframes fall { from { transform: translateY(0); } to { transform: translateY(var(--end)); } }
+    @keyframes flow { to { stroke-dashoffset: -100; } }
+
     @media (prefers-reduced-motion: reduce) {
-      .pulse, .scan, .signal { animation: none; }
-      .signal, .scan { visibility: hidden; }
+      * { animation: none !important; }
     }
   </style>
-
-  <rect x="1" y="1" width="878" height="113" rx="15" fill="url(#surface)" stroke="url(#frame)" stroke-width="1.3"/>
-  <rect x="2" y="2" width="876" height="111" rx="14" fill="url(#grid)" mask="url(#grid-mask)"/>
-  <path d="M33 25h30" stroke="#8fd5ff" stroke-width="2.4" stroke-linecap="round"/>
-  <text x="76" y="31" fill="#8fd5ff" font-family="'IBM Plex Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace" font-size="16" font-weight="650" letter-spacing="1.3">WEB DEVELOPMENT</text>
-  <text x="32" y="79" fill="#eef5ff" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="36" font-weight="715" letter-spacing="-.62">Django Social Media</text>
-
-  <g transform="translate(611 21)" color="#8fd5ff" aria-hidden="true">
-    <g fill="none" stroke="currentColor" stroke-width="1.3" stroke-opacity=".48">
-      <path d="M90 36 12 22m78 14L40 65m50-29 47-28M90 36l76 14M12 22l28 43 126-15-29-42L12 22"/>
+  <g font-family="'IBM Plex Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace">
+    <g clip-path="url(#card)">
+      <rect width="928" height="124" fill="url(#background)"/>
+      <ellipse cx="763" cy="63" rx="198" ry="95" fill="url(#halo)"/>
+      <path d="M615 0h313v124H615Z" fill="url(#grid)" opacity=".39"/>
+      <g font-size="11" opacity=".25" aria-hidden="true">
+      <g transform="translate(605 0)" opacity="0.48">
+        <text class="rain" style="--period:6.42s;--phase:-3.40s;--end:215px;--rest:89px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">0</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.80">−</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.63">ｷ</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.47">&gt;</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.34">ﾅ</tspan><tspan x="0" y="-65" fill="#34d177" opacity="0.23">ﾗ</tspan><tspan x="0" y="-78" fill="#34d177" opacity="0.16">ｶ</tspan></text>
+      </g>
+      <g transform="translate(631 0)" opacity="0.48">
+        <text class="rain" style="--period:6.05s;--phase:-0.01s;--end:228px;--rest:159px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ｳ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.83">−</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.67">A</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.53">}</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.40">D</tspan><tspan x="0" y="-65" fill="#34d177" opacity="0.29">3</tspan><tspan x="0" y="-78" fill="#34d177" opacity="0.21">ｽ</tspan><tspan x="0" y="-91" fill="#34d177" opacity="0.15">ﾘ</tspan></text>
+      </g>
+      <g transform="translate(659 0)" opacity="0.77">
+        <text class="rain" style="--period:4.67s;--phase:-3.21s;--end:189px;--rest:86px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾗ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.73">ﾚ</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.50">5</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.31">1</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.18">3</tspan></text>
+      </g>
+      <g transform="translate(684 0)" opacity="0.92">
+        <text class="rain" style="--period:6.01s;--phase:-5.95s;--end:228px;--rest:108px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">7</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.83">ﾆ</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.67">ｲ</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.53">8</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.40">ｻ</tspan><tspan x="0" y="-65" fill="#34d177" opacity="0.29">{</tspan><tspan x="0" y="-78" fill="#34d177" opacity="0.21">ﾂ</tspan><tspan x="0" y="-91" fill="#34d177" opacity="0.15">ｼ</tspan></text>
+      </g>
+      <g transform="translate(707 0)" opacity="0.49">
+        <text class="rain" style="--period:12.79s;--phase:-11.32s;--end:189px;--rest:142px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾘ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.73">5</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.50">÷</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.31">ﾁ</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.18">ｱ</tspan></text>
+      </g>
+      <g transform="translate(734 0)" opacity="0.42">
+        <text class="rain" style="--period:8.23s;--phase:-5.01s;--end:228px;--rest:138px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾏ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.83">5</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.67">C</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.53">ﾕ</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.40">ﾆ</tspan><tspan x="0" y="-65" fill="#34d177" opacity="0.29">&lt;</tspan><tspan x="0" y="-78" fill="#34d177" opacity="0.21">+</tspan><tspan x="0" y="-91" fill="#34d177" opacity="0.15">−</tspan></text>
+      </g>
+      <g transform="translate(760 0)" opacity="0.58">
+        <text class="rain" style="--period:10.06s;--phase:-1.15s;--end:215px;--rest:60px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">−</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.80">ｹ</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.63">ｽ</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.47">ﾗ</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.34">ﾑ</tspan><tspan x="0" y="-65" fill="#34d177" opacity="0.23">ｹ</tspan><tspan x="0" y="-78" fill="#34d177" opacity="0.16">B</tspan></text>
+      </g>
+      <g transform="translate(789 0)" opacity="0.69">
+        <text class="rain" style="--period:7.43s;--phase:-6.38s;--end:176px;--rest:8px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">E</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.67">ﾈ</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.40">ｲ</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.21">2</tspan></text>
+      </g>
+      <g transform="translate(817 0)" opacity="0.70">
+        <text class="rain" style="--period:5.84s;--phase:-3.55s;--end:215px;--rest:192px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">B</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.80">4</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.63">ﾌ</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.47">&gt;</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.34">2</tspan><tspan x="0" y="-65" fill="#34d177" opacity="0.23">ｲ</tspan><tspan x="0" y="-78" fill="#34d177" opacity="0.16">&gt;</tspan></text>
+      </g>
+      <g transform="translate(839 0)" opacity="0.68">
+        <text class="rain" style="--period:7.10s;--phase:-4.52s;--end:215px;--rest:13px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">−</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.80">D</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.63">}</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.47">[</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.34">ｶ</tspan><tspan x="0" y="-65" fill="#34d177" opacity="0.23">ｷ</tspan><tspan x="0" y="-78" fill="#34d177" opacity="0.16">ﾌ</tspan></text>
+      </g>
+      <g transform="translate(865 0)" opacity="0.91">
+        <text class="rain" style="--period:6.16s;--phase:-6.09s;--end:215px;--rest:118px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">−</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.80">B</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.63">C</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.47">ﾓ</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.34">ﾐ</tspan><tspan x="0" y="-65" fill="#34d177" opacity="0.23">E</tspan><tspan x="0" y="-78" fill="#34d177" opacity="0.16">ﾁ</tspan></text>
+      </g>
+      <g transform="translate(892 0)" opacity="0.50">
+        <text class="rain" style="--period:12.53s;--phase:-11.47s;--end:176px;--rest:87px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾕ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.67">0</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.40">ｹ</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.21">2</tspan></text>
+      </g>
+      <g transform="translate(916 0)" opacity="0.68">
+        <text class="rain" style="--period:9.57s;--phase:-9.42s;--end:189px;--rest:139px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">1</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.73">{</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.50">ﾕ</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.31">ﾆ</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.18">ﾚ</tspan></text>
+      </g>
+      </g>
+      <path d="M29 34H23v57h6M625 16h-12v92h12m281-92h-12m12 0v12m0 80h-12m12 0V96" fill="none" stroke="#58c382" stroke-opacity=".75"/>
+      <path d="M1 24v66" stroke="#6ded9c" stroke-width="3"/>
+      <text x="43" y="57" fill="#e5ffee" font-size="36" font-weight="700" letter-spacing="-1.1">Django Social Media</text>
+      <text x="45" y="90" fill="#83db9f" font-size="20" letter-spacing=".05">Django / PostgreSQL / Celery</text>
+      <g aria-hidden="true">
+      <path d="M712 62h37l16-22h35" fill="none" stroke="#4c9269" stroke-width="1.2"/>
+      <path d="M712 62h37l16-22h35" class="pulse" pathLength="100" style="--period:3.4s;--phase:-0.0s"/>
+      <path d="M712 62h37l16 22h35" fill="none" stroke="#4c9269" stroke-width="1.2"/>
+      <path d="M712 62h37l16 22h35" class="pulse" pathLength="100" style="--period:4.1s;--phase:-1.4s"/>
+      <rect x="646" y="47" width="65" height="29" rx="4" fill="#143725" stroke="#7adfa0"/>
+      <text x="678.5" y="66" text-anchor="middle" fill="#d2ffe0" font-size="13" font-weight="700">APP</text>
+      <rect x="799" y="25" width="74" height="29" rx="4" fill="#0a2117" stroke="#4c8c65"/>
+      <text x="836" y="44" text-anchor="middle" fill="#a8e3ba" font-size="13" font-weight="700">DB</text>
+      <rect x="799" y="69" width="74" height="29" rx="4" fill="#0a2117" stroke="#4c8c65"/>
+      <text x="836" y="88" text-anchor="middle" fill="#a8e3ba" font-size="13" font-weight="700">QUEUE</text>
+      </g>
     </g>
-    <g fill="none" stroke="#b4ebff" stroke-width="2.2" stroke-linecap="round">
-      <path class="signal" d="M12 22l78 14 76 14"/>
-      <path class="signal late" d="m137 8-47 28-50 29"/>
-    </g>
-    <g fill="#142b47" stroke="currentColor" stroke-width="1.7">
-      <circle cx="12" cy="22" r="6"/>
-      <circle cx="40" cy="65" r="6"/>
-      <circle cx="137" cy="8" r="6"/>
-      <circle cx="166" cy="50" r="6"/>
-      <circle cx="90" cy="36" r="20"/>
-    </g>
-    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
-      <circle cx="90" cy="32" r="4.8"/>
-      <path d="M81 44c1-3 4-5 9-5s8 2 9 5"/>
-    </g>
-    <circle cx="90" cy="36" r="25" fill="none" stroke="#a1e1ff" stroke-dasharray="2 4" class="pulse"/>
+    <path d="M14 1H913L927 15V107L911 123H1V14Z" fill="none" stroke="#429361" stroke-width="1.4"/>
+    <path d="M14 1h63m792 122h42l16-16" fill="none" stroke="#7cf5a6" stroke-opacity=".77" stroke-width="1.7"/>
   </g>
-  <rect x="825" y="40" width="35" height="35" rx="8" fill="#0c192b" stroke="#8fd5ff" stroke-opacity=".55"/>
-  <path d="m837 63 11-11m0 0h-8m8 0v8" fill="none" stroke="#8fd5ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

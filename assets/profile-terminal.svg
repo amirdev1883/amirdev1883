@@ -1,164 +1,228 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 346" width="880" height="346" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="928" height="340" viewBox="0 0 928 340" role="img" aria-labelledby="title desc">
   <title id="title">Amir Arani</title>
-  <desc id="desc">Terminal window for a Toronto-based software developer, with a microchip and animated circuit traces.</desc>
+  <desc id="desc">A computer science terminal with falling green code and an animated isometric lattice.</desc>
   <defs>
-    <linearGradient id="shell" x2="1" y2="1">
-      <stop stop-color="#0d1b2b"/>
-      <stop offset=".55" stop-color="#0b1524"/>
-      <stop offset="1" stop-color="#101d33"/>
+    <clipPath id="frame"><path d="M18 1H902L927 26V316L906 339H1V18Z"/></clipPath>
+    <clipPath id="screen"><path d="M1 44H927V308H1Z"/></clipPath>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#061710"/>
+      <stop offset=".46" stop-color="#030a07"/>
+      <stop offset="1" stop-color="#071b11"/>
     </linearGradient>
-    <linearGradient id="frame" x2="1" y2="1">
-      <stop stop-color="#52798f"/>
-      <stop offset=".5" stop-color="#28425b"/>
-      <stop offset="1" stop-color="#435a87"/>
-    </linearGradient>
-    <linearGradient id="name" x2="1" y2=".24">
-      <stop stop-color="#ffffff"/>
-      <stop offset=".56" stop-color="#e2f3ff"/>
-      <stop offset="1" stop-color="#9dc9fd"/>
-    </linearGradient>
-    <linearGradient id="chip" x2="1" y2="1">
-      <stop stop-color="#244766"/>
-      <stop offset=".65" stop-color="#132942"/>
-      <stop offset="1" stop-color="#17243f"/>
-    </linearGradient>
-    <linearGradient id="edge" x2="1" y2="1">
-      <stop stop-color="#9ae9fb"/>
-      <stop offset=".45" stop-color="#406e99"/>
-      <stop offset="1" stop-color="#8c9cf6"/>
-    </linearGradient>
-    <linearGradient id="grid-fade" x2="1">
-      <stop offset=".37" stop-color="#000"/>
-      <stop offset=".75" stop-color="#fff"/>
-      <stop offset="1" stop-color="#b8b8b8"/>
-    </linearGradient>
-    <linearGradient id="console" x2="1">
-      <stop stop-color="#101d2d"/>
-      <stop offset="1" stop-color="#0d1b2e"/>
-    </linearGradient>
-    <radialGradient id="halo">
-      <stop stop-color="#326a97" stop-opacity=".48"/>
-      <stop offset="1" stop-color="#326a97" stop-opacity="0"/>
+    <radialGradient id="halo" gradientUnits="userSpaceOnUse" cx="747" cy="179" r="226">
+      <stop stop-color="#168c4e" stop-opacity=".51"/>
+      <stop offset=".54" stop-color="#11693d" stop-opacity=".23"/>
+      <stop offset="1" stop-color="#105c38" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="die">
-      <stop stop-color="#1f4770"/>
-      <stop offset="1" stop-color="#0c1d33"/>
-    </radialGradient>
-    <pattern id="grid" width="21" height="21" patternUnits="userSpaceOnUse">
-      <path d="M21 0H0V21" fill="none" stroke="#729abc" stroke-opacity=".22"/>
-      <circle cx="1" cy="1" r="1" fill="#8eb2d0" opacity=".39"/>
-    </pattern>
-    <mask id="grid-mask" maskUnits="userSpaceOnUse" x="0" y="46" width="880" height="300">
-      <path d="M0 46h880v300H0z" fill="url(#grid-fade)"/>
+    <linearGradient id="rain-fade">
+      <stop stop-color="#fff" stop-opacity=".48"/>
+      <stop offset=".22" stop-color="#fff" stop-opacity=".30"/>
+      <stop offset=".49" stop-color="#fff" stop-opacity=".34"/>
+      <stop offset=".72" stop-color="#fff" stop-opacity=".82"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".96"/>
+    </linearGradient>
+    <mask id="rain-mask" maskUnits="userSpaceOnUse" x="0" y="0" width="928" height="340">
+      <rect width="928" height="340" fill="url(#rain-fade)"/>
     </mask>
-    <clipPath id="window">
-      <rect x="1" y="1" width="878" height="344" rx="22"/>
-    </clipPath>
-    <path id="trace-a" d="M465 113h63l23 23h67"/>
-    <path id="trace-b" d="M465 253h51l41-41h61"/>
-    <path id="trace-c" d="M752 149h41l22-22h48"/>
-    <path id="trace-d" d="M752 211h40l25 25h47"/>
-    <path id="trace-e" d="M694 246v34l28 28h131"/>
+    <linearGradient id="name" x1="0" y1="0" x2=".8" y2="1">
+      <stop stop-color="#f4fff3"/>
+      <stop offset=".55" stop-color="#ceffdb"/>
+      <stop offset="1" stop-color="#87ffad"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2=".55">
+      <stop stop-color="#7effa6"/>
+      <stop offset=".31" stop-color="#286642"/>
+      <stop offset=".60" stop-color="#235339"/>
+      <stop offset="1" stop-color="#49b978"/>
+    </linearGradient>
+    <linearGradient id="beam-fade" gradientUnits="userSpaceOnUse" x1="451" x2="927" y1="0" y2="0">
+      <stop stop-color="#5cff9f" stop-opacity="0"/>
+      <stop offset=".57" stop-color="#5cff9f" stop-opacity=".29"/>
+      <stop offset="1" stop-color="#5cff9f" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="21" height="21" patternUnits="userSpaceOnUse">
+      <path d="M21 .5H.5V21" fill="none" stroke="#6cdd9a" stroke-opacity=".13"/>
+      <circle cx=".5" cy=".5" r="1" fill="#6cdd9a" opacity=".19"/>
+    </pattern>
+    <pattern id="scanlines" width="5" height="4" patternUnits="userSpaceOnUse">
+      <path d="M0 3.5H5" stroke="#010603" stroke-opacity=".48"/>
+    </pattern>
+    <pattern id="ticks" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M1 2V6" stroke="#52c581" stroke-opacity=".48"/>
+    </pattern>
   </defs>
   <style>
-    .packets { fill: none; stroke: #8ae5fa; stroke-width: 3.1; stroke-linecap: round; stroke-dasharray: 10 508; animation: packets 3.8s linear infinite; }
-    .packets:nth-child(2n) { stroke: #b0a6ff; animation-delay: -2s; }
-    .packets:nth-child(3n) { animation-delay: -1s; }
-    .orbit { transform-origin: 685px 180px; animation: orbit 25s linear infinite; }
-    .core-light { animation: core-light 5.4s ease-in-out infinite alternate; }
-    .cursor { animation: cursor 1.25s ease-in-out infinite alternate; }
-    .focus { opacity: 0; animation: select-focus 15s step-end var(--phase, 0s) infinite; }
-    .backend { opacity: 1; }
-    .analytics { --phase: 5s; }
-    .networking { --phase: 10s; }
-    .focus text { animation: type-focus 15s steps(24, end) var(--phase, 0s) infinite; }
-    @keyframes packets { from { stroke-dashoffset: 14; } to { stroke-dashoffset: -280; } }
-    @keyframes orbit { to { transform: rotate(360deg); } }
-    @keyframes core-light { from { opacity: .52; } to { opacity: 1; } }
-    @keyframes cursor { 0%, 26% { opacity: .28; } 76%, 100% { opacity: 1; } }
-    @keyframes select-focus { 0% { opacity: 1; } 33.333%, 100% { opacity: 0; } }
-    @keyframes type-focus {
-      0% { clip-path: inset(0 100% 0 0); }
-      7%, 28% { clip-path: inset(0); }
-      32.5%, 100% { clip-path: inset(0 100% 0 0); }
-    }
+    .rain { transform: translateY(var(--rest)); animation: fall var(--period) linear var(--phase) infinite; }
+    .pulse { fill: none; stroke: #a3ffbe; stroke-width: 2.2; stroke-linecap: round; stroke-dasharray: 10 90; animation: flow var(--period, 4s) linear var(--phase, 0s) infinite; }
+    @keyframes fall { from { transform: translateY(0); } to { transform: translateY(var(--end)); } }
+    @keyframes flow { to { stroke-dashoffset: -100; } }
+
+    .beam { animation: scan 8s linear -4s infinite; }
+    .cursor { animation: cursor 2.1s ease-in-out infinite; }
+    .junction { animation: glow 4.5s ease-in-out var(--phase, 0s) infinite alternate; }
+    @keyframes scan { from { transform: translateY(46px); } to { transform: translateY(307px); } }
+    @keyframes cursor { 0%, 16%, 84%, 100% { opacity: .95; } 44%, 56% { opacity: .22; } }
+    @keyframes glow { from { opacity: .54; } to { opacity: 1; } }
+
     @media (prefers-reduced-motion: reduce) {
-      .packets, .orbit, .core-light, .cursor, .focus, .focus text { animation: none; }
-      .packets { visibility: hidden; }
+      * { animation: none !important; }
     }
   </style>
-
-  <g clip-path="url(#window)" font-family="'IBM Plex Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace">
-    <rect width="880" height="346" fill="url(#shell)"/>
-    <ellipse cx="687" cy="180" rx="262" ry="170" fill="url(#halo)"/>
-    <rect y="46" width="880" height="300" fill="url(#grid)" mask="url(#grid-mask)"/>
-    <path d="M0 0h880v47H0z" fill="#102236"/>
-    <path d="M0 47h880" stroke="#314b64"/>
-
-    <circle cx="28" cy="24" r="4.2" fill="#fb8b9c"/>
-    <circle cx="43" cy="24" r="4.2" fill="#ffd688"/>
-    <circle cx="58" cy="24" r="4.2" fill="#7de4c3"/>
-    <text x="80" y="29" fill="#becde0" font-size="16">amirdev1883@github</text>
-    <path d="M702 21a5 5 0 1 1 10 0c0 4-5 9-5 9s-5-5-5-9zm5-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" fill="#83aec8" fill-rule="evenodd"/>
-    <text x="722" y="29" fill="#b5c9df" font-size="16">Toronto, Canada</text>
-
-    <g fill="none" stroke="#3b5b78" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
-      <use href="#trace-a"/>
-      <use href="#trace-b"/>
-      <use href="#trace-c"/>
-      <use href="#trace-d"/>
-      <use href="#trace-e"/>
-      <path d="M514 92h59l21 21h24m-95 180h41l45-45h27v-13m-52 87h47l30-30v-46m13-130V95l-20-20h-76m113 41V87l18-18h69m-36 38h46l23-23h42m-102 93h46l22-22h37m-83 79v17l28 28h55m-106-27v27l14 14h57"/>
-    </g>
-    <g fill="#11273b" stroke="#5686a5" stroke-width="1.4">
-      <circle cx="465" cy="113" r="3.6"/><circle cx="465" cy="253" r="3.6"/>
-      <circle cx="514" cy="92" r="3.5"/><circle cx="523" cy="293" r="3.5"/>
-      <circle cx="578" cy="75" r="3.5"/><circle cx="584" cy="322" r="3.5"/>
-      <circle cx="818" cy="69" r="3.5"/><circle cx="861" cy="84" r="3.5"/>
-      <circle cx="863" cy="127" r="3.5"/><circle cx="865" cy="155" r="3.5"/>
-      <circle cx="864" cy="236" r="3.5"/><circle cx="855" cy="279" r="3.5"/>
-      <circle cx="826" cy="293" r="3.5"/><circle cx="853" cy="308" r="3.5"/>
-    </g>
-    <g fill="none" stroke="none" aria-hidden="true">
-      <use href="#trace-a" class="packets"/>
-      <use href="#trace-b" class="packets"/>
-      <use href="#trace-c" class="packets"/>
-      <use href="#trace-d" class="packets"/>
-      <use href="#trace-e" class="packets"/>
-    </g>
-
-    <circle cx="685" cy="180" r="95" fill="#6ab4f1" fill-opacity=".07" class="core-light"/>
-    <circle cx="685" cy="180" r="85" fill="none" stroke="#78aac7" stroke-opacity=".4" stroke-dasharray="1.5 7"/>
-    <g class="orbit" fill="none" stroke-linecap="round">
-      <path d="M606 149a85 85 0 0 1 51-50" stroke="#8ce6ff" stroke-width="2"/>
-      <path d="M759 219a85 85 0 0 1-50 42" stroke="#b1a5ff" stroke-width="2"/>
-    </g>
-    <g fill="none" stroke="#8eadc8" stroke-width="2.4" stroke-linecap="round">
-      <path d="M617 143h-12m12 12h-12m12 12h-12m12 13h-12m12 13h-12m12 12h-12m12 12h-12m160-74h-12m12 12h-12m12 12h-12m12 13h-12m12 13h-12m12 12h-12m12 12h-12"/>
-      <path d="M648 111v-11m12 11v-11m12 11v-11m13 11v-11m13 11v-11m12 11v-11m12 11v-11m-74 160v-11m12 11v-11m12 11v-11m13 11v-11m13 11v-11m12 11v-11m12 11v-11"/>
-    </g>
-    <rect x="617" y="112" width="136" height="136" rx="19" fill="url(#chip)" stroke="url(#edge)" stroke-width="1.5"/>
-    <rect x="626" y="121" width="118" height="118" rx="13" fill="none" stroke="#6d97b8" stroke-opacity=".6" stroke-dasharray="2 4"/>
-    <rect x="638" y="133" width="94" height="94" rx="11" fill="url(#die)" stroke="#476b8f"/>
-    <path d="M651 213v-7m0 7h7m61-66v7m0-7h-7" stroke="#87a9dc" opacity=".65" stroke-linecap="round"/>
-    <path d="m662 166 14 14-14 14m24 2h21" fill="none" stroke="#a2efff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="728" cy="225" r="2.7" fill="#99ffe3" class="core-light"/>
-
-    <text x="39" y="105" fill="#8de8d4" font-size="21">$ whoami</text>
-    <text x="34" y="179" fill="url(#name)" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="74" font-weight="740" letter-spacing="-3.2">Amir Arani</text>
-    <text x="39" y="218" fill="#d0def0" font-size="24">Software developer</text>
-
-    <rect x="38.5" y="249.5" width="400" height="67" rx="10" fill="url(#console)" stroke="#33526c"/>
-    <path d="M49 262v43" stroke="#6dd7e8" stroke-width="2" stroke-linecap="round"/>
-    <g>
-      <text x="64" y="273" fill="#95adc3" font-size="15">$ focus --watch</text>
-      <text x="64" y="300" fill="#8ae5fa" font-size="22" class="cursor">›</text>
-      <g fill="#b4f2ff" font-size="22">
-        <g class="focus backend"><text x="85" y="300">Python &amp; Django</text></g>
-        <g class="focus analytics" opacity="0"><text x="85" y="300">Data analytics</text></g>
-        <g class="focus networking" opacity="0"><text x="85" y="300">Linux &amp; networking</text></g>
+  <g font-family="'IBM Plex Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace">
+    <g clip-path="url(#frame)">
+      <rect width="928" height="340" fill="url(#background)"/>
+      <g clip-path="url(#screen)">
+        <rect x="465" y="44" width="463" height="264" fill="url(#halo)"/>
+        <rect x="540" y="44" width="388" height="264" fill="url(#grid)" opacity=".58"/>
+        <g mask="url(#rain-mask)" font-size="14" aria-hidden="true">
+      <g transform="translate(12 0)" opacity="0.58">
+        <text class="rain" style="--period:12.34s;--phase:-0.98s;--end:420px;--rest:335px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">÷</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.80">ﾃ</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.63">ﾗ</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.47">B</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.34">÷</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.23">B</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.16">+</tspan></text>
       </g>
+      <g transform="translate(34 0)" opacity="0.75">
+        <text class="rain" style="--period:5.61s;--phase:-1.62s;--end:548px;--rest:78px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">}</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.91">]</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.81">4</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.73">&lt;</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.65">ﾑ</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.57">ﾘ</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.50">ﾅ</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.43">ﾜ</tspan><tspan x="0" y="-128" fill="#34d177" opacity="0.37">&lt;</tspan><tspan x="0" y="-144" fill="#34d177" opacity="0.31">ｲ</tspan><tspan x="0" y="-160" fill="#34d177" opacity="0.26">ｹ</tspan><tspan x="0" y="-176" fill="#34d177" opacity="0.22">E</tspan><tspan x="0" y="-192" fill="#34d177" opacity="0.18">A</tspan><tspan x="0" y="-208" fill="#34d177" opacity="0.15">ﾏ</tspan><tspan x="0" y="-224" fill="#34d177" opacity="0.13">}</tspan></text>
+      </g>
+      <g transform="translate(63 0)" opacity="0.49">
+        <text class="rain" style="--period:12.48s;--phase:-4.97s;--end:484px;--rest:195px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾕ</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.87">ｶ</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.75">−</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.64">ﾐ</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.54">ﾕ</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.44">{</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.36">ﾂ</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.29">ﾚ</tspan><tspan x="0" y="-128" fill="#34d177" opacity="0.22">7</tspan><tspan x="0" y="-144" fill="#34d177" opacity="0.17">ﾓ</tspan><tspan x="0" y="-160" fill="#34d177" opacity="0.14">ﾜ</tspan></text>
+      </g>
+      <g transform="translate(88 0)" opacity="0.54">
+        <text class="rain" style="--period:11.74s;--phase:-0.73s;--end:452px;--rest:243px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">6</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.84">&gt;</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.70">ﾑ</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.57">ｱ</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.45">×</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.35">ｽ</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.26">5</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.19">ﾑ</tspan><tspan x="0" y="-128" fill="#34d177" opacity="0.14">B</tspan></text>
+      </g>
+      <g transform="translate(117 0)" opacity="0.74">
+        <text class="rain" style="--period:9.29s;--phase:-0.73s;--end:468px;--rest:331px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾐ</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.86">ﾓ</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.73">ｹ</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.61">ｱ</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.50">4</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.40">ｸ</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.31">E</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.24">D</tspan><tspan x="0" y="-128" fill="#34d177" opacity="0.18">2</tspan><tspan x="0" y="-144" fill="#34d177" opacity="0.14">7</tspan></text>
+      </g>
+      <g transform="translate(151 0)" opacity="0.45">
+        <text class="rain" style="--period:9.30s;--phase:-7.05s;--end:468px;--rest:339px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">1</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.86">ﾀ</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.73">ﾃ</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.61">7</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.50">ﾂ</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.40">8</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.31">}</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.24">ｳ</tspan><tspan x="0" y="-128" fill="#34d177" opacity="0.18">0</tspan><tspan x="0" y="-144" fill="#34d177" opacity="0.14">8</tspan></text>
+      </g>
+      <g transform="translate(190 0)" opacity="0.68">
+        <text class="rain" style="--period:4.05s;--phase:-1.36s;--end:404px;--rest:190px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ｹ</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.77">×</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.57">ﾘ</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.40">ｷ</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.26">ｶ</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.17">D</tspan></text>
+      </g>
+      <g transform="translate(219 0)" opacity="0.53">
+        <text class="rain" style="--period:8.15s;--phase:-7.35s;--end:500px;--rest:137px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">1</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.88">ｷ</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.77">ﾌ</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.67">ﾕ</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.57">&lt;</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.48">ﾃ</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.40">ﾆ</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.33">ﾀ</tspan><tspan x="0" y="-128" fill="#34d177" opacity="0.26">ｼ</tspan><tspan x="0" y="-144" fill="#34d177" opacity="0.21">9</tspan><tspan x="0" y="-160" fill="#34d177" opacity="0.17">D</tspan><tspan x="0" y="-176" fill="#34d177" opacity="0.13">−</tspan></text>
+      </g>
+      <g transform="translate(255 0)" opacity="0.64">
+        <text class="rain" style="--period:4.87s;--phase:-0.44s;--end:452px;--rest:254px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾆ</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.84">&lt;</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.70">ｳ</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.57">ﾐ</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.45">8</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.35">&lt;</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.26">ﾍ</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.19">ﾁ</tspan><tspan x="0" y="-128" fill="#34d177" opacity="0.14">ｲ</tspan></text>
+      </g>
+      <g transform="translate(285 0)" opacity="0.69">
+        <text class="rain" style="--period:12.53s;--phase:-3.03s;--end:468px;--rest:293px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾚ</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.86">ﾅ</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.73">ｺ</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.61">ﾝ</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.50">1</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.40">ﾐ</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.31">C</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.24">ｶ</tspan><tspan x="0" y="-128" fill="#34d177" opacity="0.18">8</tspan><tspan x="0" y="-144" fill="#34d177" opacity="0.14">ﾅ</tspan></text>
+      </g>
+      <g transform="translate(320 0)" opacity="0.57">
+        <text class="rain" style="--period:11.74s;--phase:-1.77s;--end:468px;--rest:302px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">&lt;</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.86">+</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.73">ﾝ</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.61">ﾀ</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.50">C</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.40">ﾂ</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.31">×</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.24">&lt;</tspan><tspan x="0" y="-128" fill="#34d177" opacity="0.18">ﾈ</tspan><tspan x="0" y="-144" fill="#34d177" opacity="0.14">[</tspan></text>
+      </g>
+      <g transform="translate(354 0)" opacity="0.54">
+        <text class="rain" style="--period:5.73s;--phase:-0.59s;--end:468px;--rest:115px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">5</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.86">0</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.73">ｶ</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.61">2</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.50">ﾑ</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.40">ﾐ</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.31">8</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.24">0</tspan><tspan x="0" y="-128" fill="#34d177" opacity="0.18">÷</tspan><tspan x="0" y="-144" fill="#34d177" opacity="0.14">ﾆ</tspan></text>
+      </g>
+      <g transform="translate(388 0)" opacity="0.69">
+        <text class="rain" style="--period:5.92s;--phase:-3.38s;--end:548px;--rest:277px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">7</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.91">ﾅ</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.81">5</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.73">ｻ</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.65">ｱ</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.57">&lt;</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.50">4</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.43">ﾘ</tspan><tspan x="0" y="-128" fill="#34d177" opacity="0.37">C</tspan><tspan x="0" y="-144" fill="#34d177" opacity="0.31">×</tspan><tspan x="0" y="-160" fill="#34d177" opacity="0.26">ｺ</tspan><tspan x="0" y="-176" fill="#34d177" opacity="0.22">ｽ</tspan><tspan x="0" y="-192" fill="#34d177" opacity="0.18">{</tspan><tspan x="0" y="-208" fill="#34d177" opacity="0.15">ﾅ</tspan><tspan x="0" y="-224" fill="#34d177" opacity="0.13">C</tspan></text>
+      </g>
+      <g transform="translate(428 0)" opacity="0.87">
+        <text class="rain" style="--period:4.77s;--phase:-0.81s;--end:436px;--rest:170px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">×</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.83">ﾍ</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.67">ﾝ</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.53">8</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.40">ﾌ</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.29">3</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.21">B</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.15">0</tspan></text>
+      </g>
+      <g transform="translate(463 0)" opacity="0.51">
+        <text class="rain" style="--period:7.97s;--phase:-5.67s;--end:548px;--rest:338px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾑ</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.91">[</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.81">6</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.73">D</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.65">ｶ</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.57">C</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.50">ﾍ</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.43">F</tspan><tspan x="0" y="-128" fill="#34d177" opacity="0.37">4</tspan><tspan x="0" y="-144" fill="#34d177" opacity="0.31">}</tspan><tspan x="0" y="-160" fill="#34d177" opacity="0.26">C</tspan><tspan x="0" y="-176" fill="#34d177" opacity="0.22">6</tspan><tspan x="0" y="-192" fill="#34d177" opacity="0.18">B</tspan><tspan x="0" y="-208" fill="#34d177" opacity="0.15">ｷ</tspan><tspan x="0" y="-224" fill="#34d177" opacity="0.13">ｽ</tspan></text>
+      </g>
+      <g transform="translate(495 0)" opacity="0.44">
+        <text class="rain" style="--period:11.05s;--phase:-5.75s;--end:436px;--rest:254px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">F</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.83">ﾘ</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.67">ｹ</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.53">ﾃ</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.40">ｻ</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.29">3</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.21">ﾝ</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.15">ﾘ</tspan></text>
+      </g>
+      <g transform="translate(530 0)" opacity="0.50">
+        <text class="rain" style="--period:12.44s;--phase:-2.12s;--end:516px;--rest:494px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">5</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.89">D</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.79">ﾍ</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.69">ｽ</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.60">ﾅ</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.51">[</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.44">ｺ</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.37">4</tspan><tspan x="0" y="-128" fill="#34d177" opacity="0.30">E</tspan><tspan x="0" y="-144" fill="#34d177" opacity="0.25">D</tspan><tspan x="0" y="-160" fill="#34d177" opacity="0.20">ｽ</tspan><tspan x="0" y="-176" fill="#34d177" opacity="0.16">ﾈ</tspan><tspan x="0" y="-192" fill="#34d177" opacity="0.13">ｶ</tspan></text>
+      </g>
+      <g transform="translate(560 0)" opacity="0.71">
+        <text class="rain" style="--period:11.62s;--phase:-4.49s;--end:404px;--rest:297px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ｳ</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.77">ﾑ</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.57">ﾑ</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.40">3</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.26">ﾌ</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.17">C</tspan></text>
+      </g>
+      <g transform="translate(592 0)" opacity="0.55">
+        <text class="rain" style="--period:9.78s;--phase:-5.54s;--end:500px;--rest:97px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">&lt;</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.88">2</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.77">ｲ</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.67">9</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.57">ﾜ</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.48">ﾝ</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.40">ﾁ</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.33">&gt;</tspan><tspan x="0" y="-128" fill="#34d177" opacity="0.26">&gt;</tspan><tspan x="0" y="-144" fill="#34d177" opacity="0.21">ｱ</tspan><tspan x="0" y="-160" fill="#34d177" opacity="0.17">ﾅ</tspan><tspan x="0" y="-176" fill="#34d177" opacity="0.13">ｷ</tspan></text>
+      </g>
+      <g transform="translate(615 0)" opacity="0.75">
+        <text class="rain" style="--period:5.22s;--phase:-0.77s;--end:468px;--rest:337px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">1</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.86">3</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.73">2</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.61">ﾜ</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.50">A</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.40">ﾌ</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.31">ﾃ</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.24">ｼ</tspan><tspan x="0" y="-128" fill="#34d177" opacity="0.18">ﾗ</tspan><tspan x="0" y="-144" fill="#34d177" opacity="0.14">ﾕ</tspan></text>
+      </g>
+      <g transform="translate(641 0)" opacity="0.54">
+        <text class="rain" style="--period:11.49s;--phase:-1.09s;--end:532px;--rest:159px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">B</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.90">ﾅ</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.80">ｷ</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.71">−</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.63">ﾍ</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.54">ﾁ</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.47">C</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.40">{</tspan><tspan x="0" y="-128" fill="#34d177" opacity="0.34">ﾅ</tspan><tspan x="0" y="-144" fill="#34d177" opacity="0.28">ﾐ</tspan><tspan x="0" y="-160" fill="#34d177" opacity="0.23">B</tspan><tspan x="0" y="-176" fill="#34d177" opacity="0.19">ﾜ</tspan><tspan x="0" y="-192" fill="#34d177" opacity="0.16">]</tspan><tspan x="0" y="-208" fill="#34d177" opacity="0.13">ﾓ</tspan></text>
+      </g>
+      <g transform="translate(664 0)" opacity="0.65">
+        <text class="rain" style="--period:7.31s;--phase:-0.50s;--end:516px;--rest:260px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ｳ</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.89">2</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.79">}</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.69">ﾏ</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.60">A</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.51">ｱ</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.44">ﾓ</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.37">ｹ</tspan><tspan x="0" y="-128" fill="#34d177" opacity="0.30">D</tspan><tspan x="0" y="-144" fill="#34d177" opacity="0.25">ﾁ</tspan><tspan x="0" y="-160" fill="#34d177" opacity="0.20">ｶ</tspan><tspan x="0" y="-176" fill="#34d177" opacity="0.16">ﾃ</tspan><tspan x="0" y="-192" fill="#34d177" opacity="0.13">ｱ</tspan></text>
+      </g>
+      <g transform="translate(687 0)" opacity="0.59">
+        <text class="rain" style="--period:8.38s;--phase:-2.30s;--end:484px;--rest:184px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">7</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.87">ﾈ</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.75">5</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.64">2</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.54">5</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.44">7</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.36">ｳ</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.29">ﾘ</tspan><tspan x="0" y="-128" fill="#34d177" opacity="0.22">ｳ</tspan><tspan x="0" y="-144" fill="#34d177" opacity="0.17">5</tspan><tspan x="0" y="-160" fill="#34d177" opacity="0.14">ﾆ</tspan></text>
+      </g>
+      <g transform="translate(709 0)" opacity="0.88">
+        <text class="rain" style="--period:5.81s;--phase:-4.42s;--end:532px;--rest:8px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ｺ</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.90">B</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.80">]</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.71">ﾁ</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.63">ﾃ</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.54">ﾑ</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.47">ﾕ</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.40">&gt;</tspan><tspan x="0" y="-128" fill="#34d177" opacity="0.34">÷</tspan><tspan x="0" y="-144" fill="#34d177" opacity="0.28">ﾗ</tspan><tspan x="0" y="-160" fill="#34d177" opacity="0.23">]</tspan><tspan x="0" y="-176" fill="#34d177" opacity="0.19">]</tspan><tspan x="0" y="-192" fill="#34d177" opacity="0.16">×</tspan><tspan x="0" y="-208" fill="#34d177" opacity="0.13">4</tspan></text>
+      </g>
+      <g transform="translate(733 0)" opacity="0.62">
+        <text class="rain" style="--period:8.84s;--phase:-7.33s;--end:484px;--rest:176px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾜ</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.87">÷</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.75">ﾍ</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.64">&lt;</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.54">2</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.44">8</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.36">ｸ</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.29">+</tspan><tspan x="0" y="-128" fill="#34d177" opacity="0.22">ﾆ</tspan><tspan x="0" y="-144" fill="#34d177" opacity="0.17">ｽ</tspan><tspan x="0" y="-160" fill="#34d177" opacity="0.14">5</tspan></text>
+      </g>
+      <g transform="translate(756 0)" opacity="0.84">
+        <text class="rain" style="--period:9.20s;--phase:-8.20s;--end:484px;--rest:1px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ｹ</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.87">ﾆ</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.75">ｲ</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.64">8</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.54">ﾗ</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.44">1</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.36">6</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.29">ﾆ</tspan><tspan x="0" y="-128" fill="#34d177" opacity="0.22">6</tspan><tspan x="0" y="-144" fill="#34d177" opacity="0.17">ｺ</tspan><tspan x="0" y="-160" fill="#34d177" opacity="0.14">ｼ</tspan></text>
+      </g>
+      <g transform="translate(782 0)" opacity="0.74">
+        <text class="rain" style="--period:5.59s;--phase:-1.36s;--end:436px;--rest:347px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ｸ</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.83">ﾀ</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.67">ﾗ</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.53">6</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.40">−</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.29">ﾁ</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.21">1</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.15">×</tspan></text>
+      </g>
+      <g transform="translate(803 0)" opacity="0.49">
+        <text class="rain" style="--period:12.99s;--phase:-0.08s;--end:532px;--rest:497px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">+</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.90">ﾌ</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.80">ﾌ</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.71">ﾗ</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.63">ﾘ</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.54">ﾓ</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.47">ﾘ</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.40">ｳ</tspan><tspan x="0" y="-128" fill="#34d177" opacity="0.34">−</tspan><tspan x="0" y="-144" fill="#34d177" opacity="0.28">8</tspan><tspan x="0" y="-160" fill="#34d177" opacity="0.23">ｷ</tspan><tspan x="0" y="-176" fill="#34d177" opacity="0.19">ﾁ</tspan><tspan x="0" y="-192" fill="#34d177" opacity="0.16">ｹ</tspan><tspan x="0" y="-208" fill="#34d177" opacity="0.13">C</tspan></text>
+      </g>
+      <g transform="translate(826 0)" opacity="0.75">
+        <text class="rain" style="--period:5.56s;--phase:-3.06s;--end:516px;--rest:443px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">7</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.89">1</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.79">ｶ</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.69">ﾐ</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.60">ｺ</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.51">ｶ</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.44">ﾏ</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.37">ﾍ</tspan><tspan x="0" y="-128" fill="#34d177" opacity="0.30">ﾈ</tspan><tspan x="0" y="-144" fill="#34d177" opacity="0.25">ﾆ</tspan><tspan x="0" y="-160" fill="#34d177" opacity="0.20">ｺ</tspan><tspan x="0" y="-176" fill="#34d177" opacity="0.16">ﾘ</tspan><tspan x="0" y="-192" fill="#34d177" opacity="0.13">ﾗ</tspan></text>
+      </g>
+      <g transform="translate(848 0)" opacity="0.61">
+        <text class="rain" style="--period:12.83s;--phase:-10.72s;--end:452px;--rest:207px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ｸ</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.84">ﾕ</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.70">ﾚ</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.57">×</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.45">{</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.35">}</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.26">1</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.19">ｼ</tspan><tspan x="0" y="-128" fill="#34d177" opacity="0.14">2</tspan></text>
+      </g>
+      <g transform="translate(872 0)" opacity="0.94">
+        <text class="rain" style="--period:5.46s;--phase:-4.20s;--end:436px;--rest:204px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾏ</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.83">D</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.67">F</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.53">ﾂ</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.40">3</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.29">÷</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.21">ﾝ</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.15">ﾆ</tspan></text>
+      </g>
+      <g transform="translate(893 0)" opacity="0.46">
+        <text class="rain" style="--period:8.28s;--phase:-6.13s;--end:548px;--rest:392px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾌ</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.91">ﾁ</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.81">ｽ</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.73">0</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.65">ﾚ</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.57">ｸ</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.50">ﾘ</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.43">ﾀ</tspan><tspan x="0" y="-128" fill="#34d177" opacity="0.37">ﾁ</tspan><tspan x="0" y="-144" fill="#34d177" opacity="0.31">C</tspan><tspan x="0" y="-160" fill="#34d177" opacity="0.26">ｼ</tspan><tspan x="0" y="-176" fill="#34d177" opacity="0.22">1</tspan><tspan x="0" y="-192" fill="#34d177" opacity="0.18">ｺ</tspan><tspan x="0" y="-208" fill="#34d177" opacity="0.15">0</tspan><tspan x="0" y="-224" fill="#34d177" opacity="0.13">×</tspan></text>
+      </g>
+      <g transform="translate(915 0)" opacity="0.94">
+        <text class="rain" style="--period:4.67s;--phase:-4.01s;--end:548px;--rest:110px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ｹ</tspan><tspan x="0" y="-16" fill="#54fb90" opacity="0.91">8</tspan><tspan x="0" y="-32" fill="#54fb90" opacity="0.81">}</tspan><tspan x="0" y="-48" fill="#34d177" opacity="0.73">9</tspan><tspan x="0" y="-64" fill="#34d177" opacity="0.65">ﾑ</tspan><tspan x="0" y="-80" fill="#34d177" opacity="0.57">ﾕ</tspan><tspan x="0" y="-96" fill="#34d177" opacity="0.50">ﾝ</tspan><tspan x="0" y="-112" fill="#34d177" opacity="0.43">&gt;</tspan><tspan x="0" y="-128" fill="#34d177" opacity="0.37">9</tspan><tspan x="0" y="-144" fill="#34d177" opacity="0.31">F</tspan><tspan x="0" y="-160" fill="#34d177" opacity="0.26">ｳ</tspan><tspan x="0" y="-176" fill="#34d177" opacity="0.22">[</tspan><tspan x="0" y="-192" fill="#34d177" opacity="0.18">ｼ</tspan><tspan x="0" y="-208" fill="#34d177" opacity="0.15">4</tspan><tspan x="0" y="-224" fill="#34d177" opacity="0.13">E</tspan></text>
+      </g>
+        </g>
+        <path d="M1 44H928V308H1Z" fill="url(#scanlines)" opacity=".42"/>
+        <path class="beam" d="M451 0H927" stroke="url(#beam-fade)" stroke-width="2"/>
+      </g>
+
+      <path d="M1 1H928V44H1ZM1 308H928V340H1Z" fill="#081b12"/>
+      <path d="M1 44.5H928M1 308.5H928" stroke="#214b34"/>
+      <path d="M21 44.5H162M746 308.5H904" stroke="#63e998" stroke-opacity=".65"/>
+      <path d="M18 24H42" stroke="#3b8158" stroke-width="1"/>
+      <circle cx="21" cy="24" r="3.6" fill="#8dffb1"/>
+      <circle cx="31" cy="24" r="3.6" fill="#4eaf72"/>
+      <circle cx="41" cy="24" r="3.6" fill="#2e734d"/>
+      <text x="59" y="29" fill="#b1d8be" font-size="14" letter-spacing=".6">amirdev1883@github</text>
+      <text x="879" y="29" text-anchor="end" fill="#a8cfb4" font-size="13" letter-spacing="1.5">TORONTO, CANADA</text>
+      <rect x="22" y="320" width="161" height="8" fill="url(#ticks)"/>
+      <path d="M202 324H663m18 0h42l4-4h31m28 4h83" fill="none" stroke="#255b3c"/>
+      <path d="M882 320v8m6-8v8m6-8v8" stroke="#57d889" stroke-opacity=".65"/>
+
+      <g fill="none" aria-hidden="true">
+        <circle cx="748" cy="175" r="113" stroke="#4fab74" stroke-opacity=".39" stroke-dasharray="2 7"/>
+        <path d="M630 81v-10h10m217 0h10v10m0 188v10h-10m-217 0h-10v-10" stroke="#74e7a0" stroke-opacity=".68"/>
+        <path d="M748 61v10m0 208v10m-118-114h12m213 0h12" stroke="#74e7a0" stroke-opacity=".68"/>
+        <path d="M748 83l87 48-87 48-87-48Z" fill="#0a2518" fill-opacity=".84" stroke="#65da95" stroke-opacity=".72"/>
+        <path d="M661 131l87 48v93l-87-48Z" fill="#082318" fill-opacity=".86" stroke="#65da95" stroke-opacity=".61"/>
+        <path d="M748 179l87-48v93l-87 48Z" fill="#103b24" fill-opacity=".76" stroke="#65da95" stroke-opacity=".68"/>
+        <path d="M683 119l87 48v93m-65-153 87 48v93m-65-153 87 48v93M683 143l87-48m-65 60 87-48m-65 60 87-48m-43 48v93m-44-93v93m-22-105v93m-22-105v93M661 154l87 48 87-48m-174 24 87 48 87-48m-174 23 87 48 87-48" stroke="#65da95" stroke-opacity=".25"/>
+        <path d="M748 108l44 23-44 24-43-24Z" fill="#8dffb1" fill-opacity=".12" stroke="#84ffb1" stroke-opacity=".69"/>
+        <path d="M661 131l87-48 87 48v93l-87 48-87-48Z" class="pulse" pathLength="100" style="--period:6.4s;--phase:-1.4s"/>
+        <path d="M661 131l87 48 87-48" class="pulse" pathLength="100" style="--period:4.6s;--phase:-2.9s"/>
+        <path d="M748 83v96 93" class="pulse" pathLength="100" style="--period:4.8s;--phase:-1.8s"/>
+        <path d="M748 121v20m-10-10h20" stroke="#bdffcc" stroke-opacity=".83"/>
+        <g fill="#b5ffcc" stroke="#102e1c" stroke-width="1.4">
+          <circle class="junction" cx="748" cy="83" r="3.4" style="--phase:-1s"/>
+          <circle class="junction" cx="661" cy="131" r="3.4" style="--phase:-2s"/>
+          <circle class="junction" cx="835" cy="131" r="3.4" style="--phase:-3s"/>
+          <circle class="junction" cx="748" cy="179" r="4.2"/>
+          <circle class="junction" cx="748" cy="272" r="3.4" style="--phase:-1.5s"/>
+        </g>
+      </g>
+
+      <path d="M39 104v-21h23m-23 184v21h23" fill="none" stroke="#69f49c" stroke-opacity=".70"/>
+      <text x="59" y="114" fill="#9dffc0" font-size="21" font-weight="700">~/profile $ whoami</text>
+      <path class="cursor" d="M300 98h10v17h-10Z" fill="#74fba4"/>
+      <text x="57" y="193" fill="#66ff9d" opacity=".13" font-size="83" font-weight="700" letter-spacing="-2.6" aria-hidden="true">AMIR ARANI</text>
+      <text x="55" y="190" fill="url(#name)" font-size="83" font-weight="700" letter-spacing="-2.6">AMIR ARANI</text>
+      <text x="60" y="234" fill="#75f8a1" font-size="28" font-weight="700" letter-spacing="2.3">COMPUTER SCIENCE</text>
+      <text x="61" y="270" fill="#b6dac1" font-size="20">Software development · Data analytics</text>
     </g>
+    <path d="M18 1H902L927 26V316L906 339H1V18Z" fill="none" stroke="url(#edge)" stroke-width="1.5"/>
+    <path d="M1 18L18 1h74m789 338h25l21-23v-18" fill="none" stroke="#88ffad" stroke-width="2"/>
   </g>
-  <rect x="1" y="1" width="878" height="344" rx="22" fill="none" stroke="url(#frame)" stroke-width="1.5"/>
 </svg>
