@@ -1,28 +1,44 @@
-<h1 align="center">👋 Hello, I'm Amir Arani</h1>
+<p align="center">
+  <a href="https://amirdev1883.github.io/">
+    <img src="assets/profile-terminal.svg" width="880" alt="Amir Arani, Python backend developer in Toronto, Canada">
+  </a>
+</p>
 
----
+<p align="center">
+  <a href="https://amirdev1883.github.io/"><kbd>Portfolio ↗</kbd></a> &nbsp;
+  <a href="https://amirdev1883.github.io/projects.html"><kbd>Projects ↗</kbd></a> &nbsp;
+  <a href="https://amirdev1883.github.io/resume.html"><kbd>Résumé ↗</kbd></a> &nbsp;
+  <a href="https://www.linkedin.com/in/amiraranii/"><kbd>LinkedIn ↗</kbd></a>
+</p>
 
-### 📝 About Me  
+I build Django apps and REST APIs in Python. My projects span backend design and data analytics, and I’m exploring how applications run on Linux and cloud infrastructure.
 
-I'm a passionate **Backend Developer** with a strong interest in **AI 🤖** and **DevOps Engineering ⚙️**.  
-I’m fascinated by how these technologies can **transform our world 🌍** and make development more efficient.  
-Always eager to **learn new things 📚**, explore new tools, and collaborate on exciting projects.  
+## `~/projects`
 
-💡 Currently, I’m sharpening my skills in **Django, REST APIs, and modern DevOps practices**.  
+[![Developer Technology Trends on GitHub](assets/project-capstone.svg)](https://github.com/amirdev1883/ibm-data-analyst-capstone)
 
----
+My IBM Data Analyst capstone looks at which tools developers use and want to use next. It includes Python notebooks, SQLite queries, and an interactive dashboard covering **18,845 respondents across 161 countries** from a subset of the 2024 Stack Overflow Developer Survey.
 
-### 📫 Contact Me  
+[![Task Manager API and Dashboard on GitHub](assets/project-task-manager.svg)](https://github.com/amirdev1883/Django-Internship-Assignment-)
 
-<a href="mailto:amirdev1883@gmail.com"><img src='https://img.shields.io/badge/-Gmail-D14836?logo=gmail&logoColor=white'></a>
-<a href="https://www.linkedin.com/in/amiraranii"><img src='https://img.shields.io/badge/-LinkedIn-0077B5?logo=linkedin&logoColor=white'></a>  
-<a href="https://telegram.me/amirdev1883"><img src='https://img.shields.io/badge/-Telegram-2CA5E0?logo=telegram&logoColor=white'></a>
+A Django dashboard and REST API for managing tasks, with user authentication and Swagger API documentation.
 
-💬 Feel free to reach out if you’d like to **collaborate, contribute, or just chat about tech**!  
+[![B2B Inventory Management on GitHub](assets/project-inventory.svg)](https://github.com/amirdev1883/b2b-inventory-management)
 
----
+An evolving inventory and order management project exploring how to keep each organization’s data and workflows separate in a shared backend.
 
-[//]: # (Optional GitHub Stats Section)  
-[//]: # (<p align="center">)  
-[//]: # (  <img src="https://github-readme-stats.vercel.app/api?username=amirdev1883&show_icons=true&theme=radical" alt="GitHub Stats" />)  
-[//]: # (</p>)  
+[![Django Social Media on GitHub](assets/project-social.svg)](https://github.com/amirdev1883/djangosocialmedia)
+
+A Django web app with a documented Docker Compose setup for running it locally.
+
+## `~/toolkit`
+
+- **Backend** · Python, Django, Django REST Framework, PostgreSQL, SQLite
+- **Infrastructure** · Linux, Git, Docker, Redis, Celery
+- **Analytics** · SQL, Python, Seaborn, IBM Cognos
+
+![Currently learning networking, cloud engineering, and cybersecurity](assets/learning-path.svg)
+
+## `~/contact`
+
+Open to co-op opportunities and collaboration on software projects. [Email](mailto:amirdev1883@gmail.com) · [LinkedIn](https://www.linkedin.com/in/amiraranii/) · [Telegram](https://telegram.me/amirdev1883)

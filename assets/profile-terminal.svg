@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 346" width="880" height="346" role="img" aria-labelledby="title desc">
+  <title id="title">Amir Arani</title>
+  <desc id="desc">Terminal window for a Toronto-based Python backend developer, with a microchip and animated circuit traces.</desc>
+  <defs>
+    <linearGradient id="shell" x2="1" y2="1">
+      <stop stop-color="#0d1b2b"/>
+      <stop offset=".55" stop-color="#0b1524"/>
+      <stop offset="1" stop-color="#101d33"/>
+    </linearGradient>
+    <linearGradient id="frame" x2="1" y2="1">
+      <stop stop-color="#52798f"/>
+      <stop offset=".5" stop-color="#28425b"/>
+      <stop offset="1" stop-color="#435a87"/>
+    </linearGradient>
+    <linearGradient id="name" x2="1" y2=".24">
+      <stop stop-color="#ffffff"/>
+      <stop offset=".56" stop-color="#e2f3ff"/>
+      <stop offset="1" stop-color="#9dc9fd"/>
+    </linearGradient>
+    <linearGradient id="chip" x2="1" y2="1">
+      <stop stop-color="#244766"/>
+      <stop offset=".65" stop-color="#132942"/>
+      <stop offset="1" stop-color="#17243f"/>
+    </linearGradient>
+    <linearGradient id="edge" x2="1" y2="1">
+      <stop stop-color="#9ae9fb"/>
+      <stop offset=".45" stop-color="#406e99"/>
+      <stop offset="1" stop-color="#8c9cf6"/>
+    </linearGradient>
+    <linearGradient id="grid-fade" x2="1">
+      <stop offset=".37" stop-color="#000"/>
+      <stop offset=".75" stop-color="#fff"/>
+      <stop offset="1" stop-color="#b8b8b8"/>
+    </linearGradient>
+    <linearGradient id="console" x2="1">
+      <stop stop-color="#101d2d"/>
+      <stop offset="1" stop-color="#0d1b2e"/>
+    </linearGradient>
+    <radialGradient id="halo">
+      <stop stop-color="#326a97" stop-opacity=".48"/>
+      <stop offset="1" stop-color="#326a97" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="die">
+      <stop stop-color="#1f4770"/>
+      <stop offset="1" stop-color="#0c1d33"/>
+    </radialGradient>
+    <pattern id="grid" width="21" height="21" patternUnits="userSpaceOnUse">
+      <path d="M21 0H0V21" fill="none" stroke="#729abc" stroke-opacity=".22"/>
+      <circle cx="1" cy="1" r="1" fill="#8eb2d0" opacity=".39"/>
+    </pattern>
+    <mask id="grid-mask" maskUnits="userSpaceOnUse" x="0" y="46" width="880" height="300">
+      <path d="M0 46h880v300H0z" fill="url(#grid-fade)"/>
+    </mask>
+    <clipPath id="window">
+      <rect x="1" y="1" width="878" height="344" rx="22"/>
+    </clipPath>
+    <path id="trace-a" d="M465 113h63l23 23h67"/>
+    <path id="trace-b" d="M465 253h51l41-41h61"/>
+    <path id="trace-c" d="M752 149h41l22-22h48"/>
+    <path id="trace-d" d="M752 211h40l25 25h47"/>
+    <path id="trace-e" d="M694 246v34l28 28h131"/>
+  </defs>
+  <style>
+    .packets { fill: none; stroke: #8ae5fa; stroke-width: 3.1; stroke-linecap: round; stroke-dasharray: 10 508; animation: packets 3.8s linear infinite; }
+    .packets:nth-child(2n) { stroke: #b0a6ff; animation-delay: -2s; }
+    .packets:nth-child(3n) { animation-delay: -1s; }
+    .orbit { transform-origin: 685px 180px; animation: orbit 25s linear infinite; }
+    .core-light { animation: core-light 5.4s ease-in-out infinite alternate; }
+    .cursor { animation: cursor 1.25s ease-in-out infinite alternate; }
+    .focus { opacity: 0; animation: select-focus 15s step-end var(--phase, 0s) infinite; }
+    .backend { opacity: 1; }
+    .cloud { --phase: 5s; }
+    .security { --phase: 10s; }
+    .focus text { animation: type-focus 15s steps(24, end) var(--phase, 0s) infinite; }
+    @keyframes packets { from { stroke-dashoffset: 14; } to { stroke-dashoffset: -280; } }
+    @keyframes orbit { to { transform: rotate(360deg); } }
+    @keyframes core-light { from { opacity: .52; } to { opacity: 1; } }
+    @keyframes cursor { 0%, 26% { opacity: .28; } 76%, 100% { opacity: 1; } }
+    @keyframes select-focus { 0% { opacity: 1; } 33.333%, 100% { opacity: 0; } }
+    @keyframes type-focus {
+      0% { clip-path: inset(0 100% 0 0); }
+      7%, 28% { clip-path: inset(0); }
+      32.5%, 100% { clip-path: inset(0 100% 0 0); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .packets, .orbit, .core-light, .cursor, .focus, .focus text { animation: none; }
+      .packets { visibility: hidden; }
+    }
+  </style>
+
+  <g clip-path="url(#window)" font-family="'IBM Plex Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace">
+    <rect width="880" height="346" fill="url(#shell)"/>
+    <ellipse cx="687" cy="180" rx="262" ry="170" fill="url(#halo)"/>
+    <rect y="46" width="880" height="300" fill="url(#grid)" mask="url(#grid-mask)"/>
+    <path d="M0 0h880v47H0z" fill="#102236"/>
+    <path d="M0 47h880" stroke="#314b64"/>
+
+    <circle cx="28" cy="24" r="4.2" fill="#fb8b9c"/>
+    <circle cx="43" cy="24" r="4.2" fill="#ffd688"/>
+    <circle cx="58" cy="24" r="4.2" fill="#7de4c3"/>
+    <text x="80" y="29" fill="#becde0" font-size="16">amirdev1883@github</text>
+    <path d="M702 21a5 5 0 1 1 10 0c0 4-5 9-5 9s-5-5-5-9zm5-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" fill="#83aec8" fill-rule="evenodd"/>
+    <text x="722" y="29" fill="#b5c9df" font-size="16">Toronto, Canada</text>
+
+    <g fill="none" stroke="#3b5b78" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+      <use href="#trace-a"/>
+      <use href="#trace-b"/>
+      <use href="#trace-c"/>
+      <use href="#trace-d"/>
+      <use href="#trace-e"/>
+      <path d="M514 92h59l21 21h24m-95 180h41l45-45h27v-13m-52 87h47l30-30v-46m13-130V95l-20-20h-76m113 41V87l18-18h69m-36 38h46l23-23h42m-102 93h46l22-22h37m-83 79v17l28 28h55m-106-27v27l14 14h57"/>
+    </g>
+    <g fill="#11273b" stroke="#5686a5" stroke-width="1.4">
+      <circle cx="465" cy="113" r="3.6"/><circle cx="465" cy="253" r="3.6"/>
+      <circle cx="514" cy="92" r="3.5"/><circle cx="523" cy="293" r="3.5"/>
+      <circle cx="578" cy="75" r="3.5"/><circle cx="584" cy="322" r="3.5"/>
+      <circle cx="818" cy="69" r="3.5"/><circle cx="861" cy="84" r="3.5"/>
+      <circle cx="863" cy="127" r="3.5"/><circle cx="865" cy="155" r="3.5"/>
+      <circle cx="864" cy="236" r="3.5"/><circle cx="855" cy="279" r="3.5"/>
+      <circle cx="826" cy="293" r="3.5"/><circle cx="853" cy="308" r="3.5"/>
+    </g>
+    <g fill="none" stroke="none" aria-hidden="true">
+      <use href="#trace-a" class="packets"/>
+      <use href="#trace-b" class="packets"/>
+      <use href="#trace-c" class="packets"/>
+      <use href="#trace-d" class="packets"/>
+      <use href="#trace-e" class="packets"/>
+    </g>
+
+    <circle cx="685" cy="180" r="95" fill="#6ab4f1" fill-opacity=".07" class="core-light"/>
+    <circle cx="685" cy="180" r="85" fill="none" stroke="#78aac7" stroke-opacity=".4" stroke-dasharray="1.5 7"/>
+    <g class="orbit" fill="none" stroke-linecap="round">
+      <path d="M606 149a85 85 0 0 1 51-50" stroke="#8ce6ff" stroke-width="2"/>
+      <path d="M759 219a85 85 0 0 1-50 42" stroke="#b1a5ff" stroke-width="2"/>
+    </g>
+    <g fill="none" stroke="#8eadc8" stroke-width="2.4" stroke-linecap="round">
+      <path d="M617 143h-12m12 12h-12m12 12h-12m12 13h-12m12 13h-12m12 12h-12m12 12h-12m160-74h-12m12 12h-12m12 12h-12m12 13h-12m12 13h-12m12 12h-12m12 12h-12"/>
+      <path d="M648 111v-11m12 11v-11m12 11v-11m13 11v-11m13 11v-11m12 11v-11m12 11v-11m-74 160v-11m12 11v-11m12 11v-11m13 11v-11m13 11v-11m12 11v-11m12 11v-11"/>
+    </g>
+    <rect x="617" y="112" width="136" height="136" rx="19" fill="url(#chip)" stroke="url(#edge)" stroke-width="1.5"/>
+    <rect x="626" y="121" width="118" height="118" rx="13" fill="none" stroke="#6d97b8" stroke-opacity=".6" stroke-dasharray="2 4"/>
+    <rect x="638" y="133" width="94" height="94" rx="11" fill="url(#die)" stroke="#476b8f"/>
+    <path d="M651 213v-7m0 7h7m61-66v7m0-7h-7" stroke="#87a9dc" opacity=".65" stroke-linecap="round"/>
+    <path d="m662 166 14 14-14 14m24 2h21" fill="none" stroke="#a2efff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="728" cy="225" r="2.7" fill="#99ffe3" class="core-light"/>
+
+    <text x="39" y="105" fill="#8de8d4" font-size="21">$ whoami</text>
+    <text x="34" y="179" fill="url(#name)" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="74" font-weight="740" letter-spacing="-3.2">Amir Arani</text>
+    <text x="39" y="218" fill="#d0def0" font-size="24">Python backend developer</text>
+
+    <rect x="38.5" y="249.5" width="400" height="67" rx="10" fill="url(#console)" stroke="#33526c"/>
+    <path d="M49 262v43" stroke="#6dd7e8" stroke-width="2" stroke-linecap="round"/>
+    <g>
+      <text x="64" y="273" fill="#95adc3" font-size="15">$ focus --watch</text>
+      <text x="64" y="300" fill="#8ae5fa" font-size="22" class="cursor">›</text>
+      <g fill="#b4f2ff" font-size="22">
+        <g class="focus backend"><text x="85" y="300">Backend engineering</text></g>
+        <g class="focus cloud" opacity="0"><text x="85" y="300">Cloud &amp; networking</text></g>
+        <g class="focus security" opacity="0"><text x="85" y="300">Cybersecurity</text></g>
+      </g>
+    </g>
+  </g>
+  <rect x="1" y="1" width="878" height="344" rx="22" fill="none" stroke="url(#frame)" stroke-width="1.5"/>
+</svg>

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 148" width="880" height="148" role="img" aria-labelledby="title desc">
+  <title id="title">Currently learning</title>
+  <desc id="desc">Three connected nodes for networking, cloud engineering, and cybersecurity.</desc>
+  <defs>
+    <linearGradient id="canvas" x2="1" y2="1">
+      <stop stop-color="#0e1c2e"/>
+      <stop offset="1" stop-color="#131d37"/>
+    </linearGradient>
+    <linearGradient id="border" x2="1">
+      <stop stop-color="#365b67"/>
+      <stop offset=".49" stop-color="#365b81"/>
+      <stop offset="1" stop-color="#625a8d"/>
+    </linearGradient>
+    <linearGradient id="rail" x2="1">
+      <stop stop-color="#82e2d4"/>
+      <stop offset=".51" stop-color="#7cd9ff"/>
+      <stop offset="1" stop-color="#b1a6ff"/>
+    </linearGradient>
+    <pattern id="points" width="13" height="13" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#7690bd" fill-opacity=".23"/>
+    </pattern>
+  </defs>
+  <style>
+    .packet { animation: route 2.8s ease-in-out infinite; }
+    .packet-delay { animation-delay: -1.55s; }
+    .status { animation: status 3.5s ease-in-out infinite alternate; }
+    @keyframes route { 0% { opacity: 0; transform: translateX(0); } 25%, 65% { opacity: 1; } 100% { opacity: 0; transform: translateX(27px); } }
+    @keyframes status { from { opacity: .48; } to { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) {
+      .packet, .status { animation: none; }
+      .packet { visibility: hidden; }
+    }
+  </style>
+
+  <rect x="1" y="1" width="878" height="146" rx="17" fill="url(#canvas)" stroke="url(#border)" stroke-width="1.3"/>
+  <rect x="2" y="2" width="876" height="144" rx="16" fill="url(#points)"/>
+  <g font-family="'IBM Plex Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace">
+    <text x="23" y="34" font-size="20" fill="#8de8d4">$</text>
+    <text x="47" y="34" font-size="20" fill="#dae8f4" font-weight="650">Currently learning</text>
+  </g>
+  <path d="M278 90h34m256 0h34" stroke="#4a6789" stroke-width="2"/>
+  <path d="m290 86 4 4-4 4m290-8 4 4-4 4" fill="none" stroke="#6893b2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="281" cy="90" r="3.2" fill="#83f2e4" class="packet"/>
+  <circle cx="571" cy="90" r="3.2" fill="#b8acff" class="packet packet-delay"/>
+
+  <g fill="#11243a" stroke-width="1.3">
+    <rect x="22" y="55" width="256" height="70" rx="10" stroke="#3f776e"/>
+    <rect x="312" y="55" width="256" height="70" rx="10" stroke="#436f92"/>
+    <rect x="602" y="55" width="256" height="70" rx="10" stroke="#645c91"/>
+  </g>
+  <g fill="#091a2d">
+    <rect x="36" y="69" width="42" height="42" rx="8"/>
+    <rect x="326" y="69" width="42" height="42" rx="8"/>
+    <rect x="616" y="69" width="42" height="42" rx="8"/>
+  </g>
+  <g stroke="#83e8d9" stroke-width="1.7" stroke-linecap="round">
+    <path d="M57 85v7m-9 5h18m-18 0v-5m18 5v-5" fill="none"/>
+    <circle cx="57" cy="82" r="3.1" fill="#122c43"/>
+    <circle cx="48" cy="92" r="3.1" fill="#122c43"/>
+    <circle cx="66" cy="92" r="3.1" fill="#122c43"/>
+  </g>
+  <path d="M339 97a5 5 0 0 1 1-10 7 7 0 0 1 13-2 6 6 0 0 1 2 12z" fill="none" stroke="#91dcff" stroke-width="1.9" stroke-linejoin="round"/>
+  <path d="m637 79 9 4v6c0 7-9 12-9 12s-9-5-9-12v-6zm-4 11 3 3 5-6" fill="none" stroke="#bab0ff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#ecf4fb" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="22" font-weight="650">
+    <text x="91" y="98">Networking</text>
+    <text x="378" y="98" font-size="20">Cloud engineering</text>
+    <text x="671" y="98">Cybersecurity</text>
+  </g>
+  <path d="M26 141h828" stroke="url(#rail)" stroke-opacity=".56" stroke-linecap="round" class="status"/>
+</svg>
