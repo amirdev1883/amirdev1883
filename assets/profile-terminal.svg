@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 346" width="880" height="346" role="img" aria-labelledby="title desc">
   <title id="title">Amir Arani</title>
-  <desc id="desc">Terminal window for a Toronto-based Python backend developer, with a microchip and animated circuit traces.</desc>
+  <desc id="desc">Terminal window for a Toronto-based software developer, with a microchip and animated circuit traces.</desc>
   <defs>
     <linearGradient id="shell" x2="1" y2="1">
       <stop stop-color="#0d1b2b"/>
@@ -69,8 +69,8 @@
     .cursor { animation: cursor 1.25s ease-in-out infinite alternate; }
     .focus { opacity: 0; animation: select-focus 15s step-end var(--phase, 0s) infinite; }
     .backend { opacity: 1; }
-    .cloud { --phase: 5s; }
-    .security { --phase: 10s; }
+    .analytics { --phase: 5s; }
+    .networking { --phase: 10s; }
     .focus text { animation: type-focus 15s steps(24, end) var(--phase, 0s) infinite; }
     @keyframes packets { from { stroke-dashoffset: 14; } to { stroke-dashoffset: -280; } }
     @keyframes orbit { to { transform: rotate(360deg); } }
@@ -146,7 +146,7 @@
 
     <text x="39" y="105" fill="#8de8d4" font-size="21">$ whoami</text>
     <text x="34" y="179" fill="url(#name)" font-family="Inter, 'Segoe UI', system-ui, sans-serif" font-size="74" font-weight="740" letter-spacing="-3.2">Amir Arani</text>
-    <text x="39" y="218" fill="#d0def0" font-size="24">Python backend developer</text>
+    <text x="39" y="218" fill="#d0def0" font-size="24">Software developer</text>
 
     <rect x="38.5" y="249.5" width="400" height="67" rx="10" fill="url(#console)" stroke="#33526c"/>
     <path d="M49 262v43" stroke="#6dd7e8" stroke-width="2" stroke-linecap="round"/>
@@ -154,9 +154,9 @@
       <text x="64" y="273" fill="#95adc3" font-size="15">$ focus --watch</text>
       <text x="64" y="300" fill="#8ae5fa" font-size="22" class="cursor">›</text>
       <g fill="#b4f2ff" font-size="22">
-        <g class="focus backend"><text x="85" y="300">Backend engineering</text></g>
-        <g class="focus cloud" opacity="0"><text x="85" y="300">Cloud &amp; networking</text></g>
-        <g class="focus security" opacity="0"><text x="85" y="300">Cybersecurity</text></g>
+        <g class="focus backend"><text x="85" y="300">Python &amp; Django</text></g>
+        <g class="focus analytics" opacity="0"><text x="85" y="300">Data analytics</text></g>
+        <g class="focus networking" opacity="0"><text x="85" y="300">Linux &amp; networking</text></g>
       </g>
     </g>
   </g>
