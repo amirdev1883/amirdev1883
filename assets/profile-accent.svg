@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="102" height="22" viewBox="0 0 102 22">
+  <defs>
+    <linearGradient id="ink">
+      <stop stop-color="#638fd5"/>
+      <stop offset="1" stop-color="#967cc8"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .signal {
+      stroke-dasharray: 10 90;
+      animation: signal 5s ease-in-out infinite;
+    }
+    @keyframes signal {
+      0% { stroke-dashoffset: 10; opacity: 0; }
+      12% { opacity: .9; }
+      52% { stroke-dashoffset: -90; opacity: .9; }
+      62%, 100% { stroke-dashoffset: -90; opacity: 0; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .signal { display: none; }
+    }
+  </style>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 11h26l8-7h18l8 7h26M34 11l8 7h18l8-7" stroke="url(#ink)" stroke-width="1.45" opacity=".72"/>
+    <path d="M8 11h26l8-7h18l8 7h26" pathLength="100" class="signal" stroke="url(#ink)" stroke-width="2.7"/>
+  </g>
+  <circle cx="8" cy="11" r="2.6" fill="#638fd5"/>
+  <circle cx="94" cy="11" r="2.6" fill="#967cc8"/>
+</svg>

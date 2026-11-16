@@ -1,46 +1,18 @@
-<p align="center">
-  <img src="assets/profile-cover.svg" width="960" alt="Amir Arani · Computer science in Toronto, Canada. An animated graph shows breadth-first search.">
-</p>
+# Amir Arani <img src="assets/profile-accent.svg" width="102" height="22" alt="">
 
-<p align="center">
-  <a href="https://amirdev1883.github.io/"><strong>Portfolio</strong></a> ·
-  <a href="https://amirdev1883.github.io/projects.html">All projects</a> ·
-  <a href="https://amirdev1883.github.io/resume.html">Résumé</a> ·
-  <a href="https://www.linkedin.com/in/amiraranii/">LinkedIn</a>
-</p>
+**Computer science · Backend development · Data analytics**<br>
+Toronto, Canada
 
-I build **Django applications and REST APIs** and use **Python and SQL** to turn data into dashboards. I’m currently studying computer networks, cloud engineering, and cybersecurity.
+[Portfolio](https://amirdev1883.github.io/) · [All projects](https://amirdev1883.github.io/projects.html) · [Résumé](https://amirdev1883.github.io/resume.html) · [LinkedIn](https://www.linkedin.com/in/amiraranii/)
+
+I build Django applications and REST APIs and use Python and SQL for data analysis. I’m currently learning computer networking, cloud engineering, and cybersecurity.
 
 ## Selected projects
 
-<table width="100%">
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://github.com/amirdev1883/djangosocialmedia"><img src="assets/project-social.svg" width="100%" alt=""><br><strong>Django Social Media</strong></a><br>
-      Profiles and posts backed by PostgreSQL, with background jobs in Celery and RabbitMQ. Runs locally with Docker Compose.
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://github.com/amirdev1883/Django-Internship-Assignment-"><img src="assets/project-task-manager.svg" width="100%" alt=""><br><strong>Task Manager API</strong></a><br>
-      A Django REST Framework API and dashboard for tracking tasks, with sign-in, SQLite, and Swagger documentation.
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://github.com/amirdev1883/ibm-data-analyst-capstone"><img src="assets/project-capstone.svg" width="100%" alt=""><br><strong>Developer Technology Trends</strong></a><br>
-      IBM capstone that uses Python, SQL, and a dashboard to analyze responses from <strong>18,845 developers in 161 countries</strong> in the 2024 Stack Overflow survey.
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://github.com/amirdev1883/b2b-inventory-management"><img src="assets/project-inventory.svg" width="100%" alt=""><br><strong>B2B Inventory Management</strong></a><br>
-      A work-in-progress backend for managing inventory and orders while keeping each organization’s data and workflows separate.
-    </td>
-  </tr>
-</table>
-
-## Experience and education
-
-- **DadePardaz Co.** · Python Backend Developer Intern. Contributed to Django REST APIs, authentication, and PostgreSQL queries.
-- **University of Kashan** · Computer science coursework in algorithms, databases, and operating systems.
-- **Kashan Computer Science Association** · Volunteered at student events from June 2023 to June 2025.
+- **[Django Social Media](https://github.com/amirdev1883/djangosocialmedia)** · Profiles and posts with PostgreSQL, background jobs with Celery and RabbitMQ, and a Docker Compose setup.
+- **[Task Manager API](https://github.com/amirdev1883/Django-Internship-Assignment-)** · A Django REST Framework API and dashboard for tracking tasks, with sign-in, SQLite, and Swagger documentation.
+- **[Developer Technology Trends](https://github.com/amirdev1883/ibm-data-analyst-capstone)** · An IBM capstone using Python, SQL, and a dashboard to analyze **18,845 responses from 161 countries** in the 2024 Stack Overflow Developer Survey.
+- **[B2B Inventory Management](https://github.com/amirdev1883/b2b-inventory-management)** · A backend in development for inventory and orders that keeps each organization’s data and workflows separate.
 
 ## Technical skills
 
@@ -49,6 +21,12 @@ I build **Django applications and REST APIs** and use **Python and SQL** to turn
 | Backend | Python, Django, Django REST Framework, PostgreSQL, SQLite |
 | Infrastructure | Linux, Git, Docker, Redis, RabbitMQ, Celery |
 | Data analytics | SQL, Python, Seaborn, IBM Cognos |
+
+## Experience and education
+
+- **DadePardaz Co.** · Python Backend Developer Intern. Contributed to Django REST APIs, authentication, and PostgreSQL queries.
+- **University of Kashan** · Computer science coursework in algorithms, databases, and operating systems.
+- **Kashan Computer Science Association** · Volunteered at student events from June 2023 to June 2025.
 
 ## Credentials
 
