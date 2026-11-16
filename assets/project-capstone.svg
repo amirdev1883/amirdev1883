@@ -1,95 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="928" height="124" viewBox="0 0 928 124" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="166" viewBox="0 0 420 166" role="img" aria-labelledby="title description">
   <title id="title">Developer Technology Trends</title>
-  <desc id="desc">The analysis workflow uses Python notebooks, SQL, and a BI dashboard.</desc>
+  <desc id="description">An illustration of two dashboard charts.</desc>
   <defs>
-    <clipPath id="card"><path d="M14 1H913L927 15V107L911 123H1V14Z"/></clipPath>
-    <linearGradient id="background">
-      <stop stop-color="#06130d"/>
-      <stop offset=".57" stop-color="#091c13"/>
-      <stop offset="1" stop-color="#06150f"/>
-    </linearGradient>
-    <radialGradient id="halo">
-      <stop stop-color="#248a4e" stop-opacity=".31"/>
-      <stop offset="1" stop-color="#248a4e" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="grid" width="15" height="15" patternUnits="userSpaceOnUse">
-      <circle cx="1" cy="1" r="1" fill="#58ae79" opacity=".38"/>
+    <clipPath id="panel"><rect x="1" y="1" width="418" height="164" rx="15"/></clipPath>
+    <pattern id="grid" width="14" height="14" patternUnits="userSpaceOnUse">
+      <path d="M14 .5H.5V14" stroke="#488f80" stroke-opacity=".11" fill="none"/>
     </pattern>
   </defs>
   <style>
-    .rain { transform: translateY(var(--rest)); animation: fall var(--period) linear var(--phase) infinite; }
-    .pulse { fill: none; stroke: #a3ffbe; stroke-width: 2.2; stroke-linecap: round; stroke-dasharray: 10 90; animation: flow var(--period, 4s) linear var(--phase, 0s) infinite; }
-    @keyframes fall { from { transform: translateY(0); } to { transform: translateY(var(--end)); } }
-    @keyframes flow { to { stroke-dashoffset: -100; } }
+    .column { transform-box: fill-box; transform-origin: center bottom; animation: chart 5s ease-in-out var(--lag, 0s) infinite; }
+    @keyframes chart { 0%, 22%, 100% { transform: scaleY(1); } 11% { transform: scaleY(.6); } }
 
     @media (prefers-reduced-motion: reduce) {
       * { animation: none !important; }
     }
   </style>
-  <g font-family="'IBM Plex Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace">
-    <g clip-path="url(#card)">
-      <rect width="928" height="124" fill="url(#background)"/>
-      <ellipse cx="763" cy="63" rx="198" ry="95" fill="url(#halo)"/>
-      <path d="M615 0h313v124H615Z" fill="url(#grid)" opacity=".39"/>
-      <g font-size="11" opacity=".25" aria-hidden="true">
-      <g transform="translate(605 0)" opacity="0.49">
-        <text class="rain" style="--period:9.32s;--phase:-9.01s;--end:176px;--rest:173px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ｶ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.67">ﾜ</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.40">ﾕ</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.21">ﾐ</tspan></text>
+  <g font-family="'Bricolage Grotesque', Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Liberation Sans', sans-serif">
+    <g clip-path="url(#panel)">
+      <rect width="420" height="166" rx="16" fill="#e6f4f0"/>
+      <rect width="420" height="166" fill="url(#grid)"/>
+      <rect x="80" y="25" width="260" height="116" rx="12" fill="#a9d6cc" opacity=".51" transform="translate(6 6)"/>
+      <rect x="80" y="25" width="260" height="116" rx="12" fill="#fafffd" stroke="#7cb7aa" stroke-width="1.4"/>
+      <path d="M80 49H340" stroke="#cbe6dd"/>
+      <g fill="#589e8f"><circle cx="95" cy="37" r="2.1"/><circle cx="104" cy="37" r="2.1"/><circle cx="113" cy="37" r="2.1"/></g>
+      <rect x="93" y="60" width="145" height="68" rx="6" fill="#e2f3ed"/>
+      <path d="M108 72v43h118m-118-14h118m-118-14h118" fill="none" stroke="#a8cfc4" stroke-width="1"/>
+      <g fill="#348b78">
+        <rect class="column" x="120" y="92" width="13" height="23" rx="2"/>
+        <rect class="column" x="142" y="98" width="13" height="17" rx="2" style="--lag:.25s" opacity=".74"/>
+        <rect class="column" x="164" y="79" width="13" height="36" rx="2" style="--lag:.50s" opacity=".89"/>
+        <rect class="column" x="186" y="89" width="13" height="26" rx="2" style="--lag:.75s" opacity=".74"/>
+        <rect class="column" x="208" y="72" width="13" height="43" rx="2" style="--lag:1s"/>
       </g>
-      <g transform="translate(631 0)" opacity="0.50">
-        <text class="rain" style="--period:8.19s;--phase:-6.77s;--end:215px;--rest:62px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾚ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.80">−</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.63">ﾗ</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.47">ｸ</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.34">D</tspan><tspan x="0" y="-65" fill="#34d177" opacity="0.23">ﾕ</tspan><tspan x="0" y="-78" fill="#34d177" opacity="0.16">D</tspan></text>
-      </g>
-      <g transform="translate(659 0)" opacity="0.84">
-        <text class="rain" style="--period:10.79s;--phase:-8.27s;--end:215px;--rest:22px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾈ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.80">ｳ</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.63">ﾌ</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.47">ｻ</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.34">ﾅ</tspan><tspan x="0" y="-65" fill="#34d177" opacity="0.23">]</tspan><tspan x="0" y="-78" fill="#34d177" opacity="0.16">×</tspan></text>
-      </g>
-      <g transform="translate(684 0)" opacity="0.80">
-        <text class="rain" style="--period:11.06s;--phase:-9.11s;--end:228px;--rest:96px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾕ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.83">ﾅ</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.67">ﾝ</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.53">ﾓ</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.40">ﾌ</tspan><tspan x="0" y="-65" fill="#34d177" opacity="0.29">ｼ</tspan><tspan x="0" y="-78" fill="#34d177" opacity="0.21">ｲ</tspan><tspan x="0" y="-91" fill="#34d177" opacity="0.15">B</tspan></text>
-      </g>
-      <g transform="translate(707 0)" opacity="0.89">
-        <text class="rain" style="--period:5.61s;--phase:-3.76s;--end:202px;--rest:189px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾚ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.77">ﾘ</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.57">D</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.40">&lt;</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.26">ﾕ</tspan><tspan x="0" y="-65" fill="#34d177" opacity="0.17">2</tspan></text>
-      </g>
-      <g transform="translate(734 0)" opacity="0.63">
-        <text class="rain" style="--period:12.38s;--phase:-0.73s;--end:228px;--rest:100px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ｻ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.83">C</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.67">4</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.53">ｻ</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.40">ｲ</tspan><tspan x="0" y="-65" fill="#34d177" opacity="0.29">ｱ</tspan><tspan x="0" y="-78" fill="#34d177" opacity="0.21">ﾃ</tspan><tspan x="0" y="-91" fill="#34d177" opacity="0.15">ﾏ</tspan></text>
-      </g>
-      <g transform="translate(760 0)" opacity="0.48">
-        <text class="rain" style="--period:8.71s;--phase:-7.14s;--end:202px;--rest:197px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾝ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.77">ｽ</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.57">ﾜ</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.40">ｳ</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.26">ﾈ</tspan><tspan x="0" y="-65" fill="#34d177" opacity="0.17">}</tspan></text>
-      </g>
-      <g transform="translate(789 0)" opacity="0.77">
-        <text class="rain" style="--period:12.10s;--phase:-9.93s;--end:215px;--rest:51px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ｳ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.80">ﾕ</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.63">+</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.47">3</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.34">ﾂ</tspan><tspan x="0" y="-65" fill="#34d177" opacity="0.23">ｱ</tspan><tspan x="0" y="-78" fill="#34d177" opacity="0.16">B</tspan></text>
-      </g>
-      <g transform="translate(817 0)" opacity="0.91">
-        <text class="rain" style="--period:11.91s;--phase:-2.60s;--end:228px;--rest:148px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">9</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.83">ﾁ</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.67">6</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.53">ｱ</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.40">2</tspan><tspan x="0" y="-65" fill="#34d177" opacity="0.29">0</tspan><tspan x="0" y="-78" fill="#34d177" opacity="0.21">ﾘ</tspan><tspan x="0" y="-91" fill="#34d177" opacity="0.15">{</tspan></text>
-      </g>
-      <g transform="translate(839 0)" opacity="0.63">
-        <text class="rain" style="--period:5.43s;--phase:-4.96s;--end:228px;--rest:152px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾃ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.83">ｹ</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.67">]</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.53">D</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.40">−</tspan><tspan x="0" y="-65" fill="#34d177" opacity="0.29">−</tspan><tspan x="0" y="-78" fill="#34d177" opacity="0.21">6</tspan><tspan x="0" y="-91" fill="#34d177" opacity="0.15">ｱ</tspan></text>
-      </g>
-      <g transform="translate(865 0)" opacity="0.94">
-        <text class="rain" style="--period:6.20s;--phase:-3.18s;--end:189px;--rest:148px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">D</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.73">÷</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.50">ﾈ</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.31">[</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.18">ﾗ</tspan></text>
-      </g>
-      <g transform="translate(892 0)" opacity="0.94">
-        <text class="rain" style="--period:12.00s;--phase:-3.21s;--end:228px;--rest:221px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">3</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.83">9</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.67">7</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.53">ﾂ</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.40">ﾁ</tspan><tspan x="0" y="-65" fill="#34d177" opacity="0.29">ﾂ</tspan><tspan x="0" y="-78" fill="#34d177" opacity="0.21">ｱ</tspan><tspan x="0" y="-91" fill="#34d177" opacity="0.15">ﾘ</tspan></text>
-      </g>
-      <g transform="translate(916 0)" opacity="0.88">
-        <text class="rain" style="--period:11.29s;--phase:-5.12s;--end:189px;--rest:80px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾃ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.73">}</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.50">ｷ</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.31">ｺ</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.18">ｲ</tspan></text>
-      </g>
-      </g>
-      <path d="M29 34H23v57h6M625 16h-12v92h12m281-92h-12m12 0v12m0 80h-12m12 0V96" fill="none" stroke="#58c382" stroke-opacity=".75"/>
-      <path d="M1 24v66" stroke="#6ded9c" stroke-width="3"/>
-      <text x="43" y="57" fill="#e5ffee" font-size="36" font-weight="700" letter-spacing="-1.1">Developer Technology Trends</text>
-      <text x="45" y="90" fill="#83db9f" font-size="20" letter-spacing=".05">2024 Stack Overflow Developer Survey</text>
-      <g aria-hidden="true">
-      <path d="M698 42h20l19 20h5" fill="none" stroke="#4c9269" stroke-width="1.2"/>
-      <path d="M698 42h20l19 20h5" class="pulse" pathLength="100" style="--period:3.4s;--phase:-0.0s"/>
-      <path d="M799 62h16l17 20h5" fill="none" stroke="#4c9269" stroke-width="1.2"/>
-      <path d="M799 62h16l17 20h5" class="pulse" pathLength="100" style="--period:4.1s;--phase:-1.4s"/>
-      <rect x="646" y="27" width="52" height="29" rx="4" fill="#0a2117" stroke="#4c8c65"/>
-      <text x="672" y="46" text-anchor="middle" fill="#a8e3ba" font-size="13" font-weight="700">PY</text>
-      <rect x="740" y="47" width="60" height="29" rx="4" fill="#143725" stroke="#7adfa0"/>
-      <text x="770" y="66" text-anchor="middle" fill="#d2ffe0" font-size="13" font-weight="700">SQL</text>
-      <rect x="835" y="67" width="47" height="29" rx="4" fill="#0a2117" stroke="#4c8c65"/>
-      <text x="858.5" y="86" text-anchor="middle" fill="#a8e3ba" font-size="13" font-weight="700">BI</text>
-      </g>
+      <rect x="249" y="60" width="78" height="68" rx="6" fill="#e2f3ed"/>
+      <path d="M261 99l10-7 11 3 10-12 11 2 12-10" fill="none" stroke="#318671" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M262 110h49m-49 6h35" stroke="#8abdaf" stroke-width="2.1" stroke-linecap="round"/>
+      <path d="M61 47v14m-7-7h14m292 52v15m-7-7h14" stroke="#478c7d" stroke-width="1.4" stroke-linecap="round"/>
     </g>
-    <path d="M14 1H913L927 15V107L911 123H1V14Z" fill="none" stroke="#429361" stroke-width="1.4"/>
-    <path d="M14 1h63m792 122h42l16-16" fill="none" stroke="#7cf5a6" stroke-opacity=".77" stroke-width="1.7"/>
+    <rect x="1" y="1" width="418" height="164" rx="15" fill="none" stroke="#c2e3da"/>
   </g>
 </svg>

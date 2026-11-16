@@ -1,95 +1,54 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="928" height="124" viewBox="0 0 928 124" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="166" viewBox="0 0 420 166" role="img" aria-labelledby="title description">
   <title id="title">Task Manager API</title>
-  <desc id="desc">An authenticated HTTP request reaches the task API.</desc>
+  <desc id="description">A task dashboard with three animated check marks.</desc>
   <defs>
-    <clipPath id="card"><path d="M14 1H913L927 15V107L911 123H1V14Z"/></clipPath>
-    <linearGradient id="background">
-      <stop stop-color="#06130d"/>
-      <stop offset=".57" stop-color="#091c13"/>
-      <stop offset="1" stop-color="#06150f"/>
-    </linearGradient>
-    <radialGradient id="halo">
-      <stop stop-color="#248a4e" stop-opacity=".31"/>
-      <stop offset="1" stop-color="#248a4e" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="grid" width="15" height="15" patternUnits="userSpaceOnUse">
-      <circle cx="1" cy="1" r="1" fill="#58ae79" opacity=".38"/>
+    <clipPath id="panel"><rect x="1" y="1" width="418" height="164" rx="15"/></clipPath>
+    <pattern id="grid" width="14" height="14" patternUnits="userSpaceOnUse">
+      <path d="M14 .5H.5V14" stroke="#c38353" stroke-opacity=".11" fill="none"/>
     </pattern>
   </defs>
   <style>
-    .rain { transform: translateY(var(--rest)); animation: fall var(--period) linear var(--phase) infinite; }
-    .pulse { fill: none; stroke: #a3ffbe; stroke-width: 2.2; stroke-linecap: round; stroke-dasharray: 10 90; animation: flow var(--period, 4s) linear var(--phase, 0s) infinite; }
-    @keyframes fall { from { transform: translateY(0); } to { transform: translateY(var(--end)); } }
-    @keyframes flow { to { stroke-dashoffset: -100; } }
+    .check { stroke-dasharray: 100; animation: check 5.5s ease-out var(--lag, 0s) infinite; }
+    @keyframes check {
+      0%, 100% { stroke-dashoffset: 100; }
+      12%, 87% { stroke-dashoffset: 0; }
+    }
 
     @media (prefers-reduced-motion: reduce) {
       * { animation: none !important; }
     }
   </style>
-  <g font-family="'IBM Plex Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace">
-    <g clip-path="url(#card)">
-      <rect width="928" height="124" fill="url(#background)"/>
-      <ellipse cx="763" cy="63" rx="198" ry="95" fill="url(#halo)"/>
-      <path d="M615 0h313v124H615Z" fill="url(#grid)" opacity=".39"/>
-      <g font-size="11" opacity=".25" aria-hidden="true">
-      <g transform="translate(605 0)" opacity="0.52">
-        <text class="rain" style="--period:10.68s;--phase:-5.83s;--end:176px;--rest:45px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾃ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.67">ｶ</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.40">ﾑ</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.21">ｱ</tspan></text>
+  <g font-family="'Bricolage Grotesque', Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Liberation Sans', sans-serif">
+    <g clip-path="url(#panel)">
+      <rect width="420" height="166" rx="16" fill="#fff2e6"/>
+      <rect width="420" height="166" fill="url(#grid)"/>
+      <rect x="94" y="28" width="232" height="115" rx="13" fill="#e9b982" opacity=".37" transform="translate(6 6)"/>
+      <rect x="94" y="28" width="232" height="115" rx="13" fill="#fffaf5" stroke="#dca577" stroke-width="1.4"/>
+      <path d="M94 53H326" stroke="#eedbc9"/>
+      <g fill="#bf784b"><circle cx="109" cy="41" r="2.2"/><circle cx="118" cy="41" r="2.2"/><circle cx="127" cy="41" r="2.2"/></g>
+      <path d="M266 41h43" stroke="#d6a17d" stroke-width="3" stroke-linecap="round"/>
+      <g fill="#fcf0e5">
+        <rect x="109" y="63" width="201" height="19" rx="4"/>
+        <rect x="109" y="87" width="201" height="19" rx="4"/>
+        <rect x="109" y="111" width="201" height="19" rx="4"/>
       </g>
-      <g transform="translate(631 0)" opacity="0.73">
-        <text class="rain" style="--period:5.92s;--phase:-2.32s;--end:189px;--rest:33px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">C</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.73">1</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.50">ｱ</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.31">F</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.18">4</tspan></text>
+      <g fill="#fffaf5" stroke="#bb7148" stroke-width="1">
+        <rect x="116" y="67" width="12" height="11" rx="2"/>
+        <rect x="116" y="91" width="12" height="11" rx="2"/>
+        <rect x="116" y="115" width="12" height="11" rx="2"/>
       </g>
-      <g transform="translate(659 0)" opacity="0.50">
-        <text class="rain" style="--period:7.78s;--phase:-6.99s;--end:176px;--rest:33px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ｹ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.67">ｺ</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.40">ﾌ</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.21">ﾏ</tspan></text>
+      <g stroke="#ab5a36" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none">
+        <path class="check" d="M119 72l2.5 2.5 5-6" pathLength="100"/>
+        <path class="check" d="M119 96l2.5 2.5 5-6" pathLength="100" style="--lag:.46s"/>
+        <path class="check" d="M119 120l2.5 2.5 5-6" pathLength="100" style="--lag:.92s"/>
       </g>
-      <g transform="translate(684 0)" opacity="0.47">
-        <text class="rain" style="--period:9.51s;--phase:-8.73s;--end:202px;--rest:114px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">0</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.77">ﾓ</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.57">[</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.40">ﾃ</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.26">ﾈ</tspan><tspan x="0" y="-65" fill="#34d177" opacity="0.17">&lt;</tspan></text>
-      </g>
-      <g transform="translate(707 0)" opacity="0.80">
-        <text class="rain" style="--period:8.68s;--phase:-7.90s;--end:176px;--rest:71px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ｽ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.67">ｱ</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.40">A</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.21">C</tspan></text>
-      </g>
-      <g transform="translate(734 0)" opacity="0.61">
-        <text class="rain" style="--period:4.62s;--phase:-1.98s;--end:202px;--rest:124px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">×</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.77">ﾗ</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.57">&lt;</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.40">ﾚ</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.26">×</tspan><tspan x="0" y="-65" fill="#34d177" opacity="0.17">ｹ</tspan></text>
-      </g>
-      <g transform="translate(760 0)" opacity="0.50">
-        <text class="rain" style="--period:6.07s;--phase:-1.87s;--end:189px;--rest:150px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾌ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.73">ｻ</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.50">ｱ</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.31">1</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.18">E</tspan></text>
-      </g>
-      <g transform="translate(789 0)" opacity="0.77">
-        <text class="rain" style="--period:4.55s;--phase:-4.38s;--end:189px;--rest:91px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾑ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.73">÷</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.50">6</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.31">ｸ</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.18">ﾘ</tspan></text>
-      </g>
-      <g transform="translate(817 0)" opacity="0.83">
-        <text class="rain" style="--period:10.54s;--phase:-5.49s;--end:189px;--rest:139px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ｽ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.73">ｲ</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.50">A</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.31">ﾆ</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.18">ｱ</tspan></text>
-      </g>
-      <g transform="translate(839 0)" opacity="0.53">
-        <text class="rain" style="--period:8.19s;--phase:-7.55s;--end:189px;--rest:119px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">2</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.73">0</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.50">ｲ</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.31">ｱ</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.18">ﾈ</tspan></text>
-      </g>
-      <g transform="translate(865 0)" opacity="0.77">
-        <text class="rain" style="--period:6.27s;--phase:-0.86s;--end:228px;--rest:217px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ｹ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.83">0</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.67">ﾅ</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.53">ｶ</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.40">−</tspan><tspan x="0" y="-65" fill="#34d177" opacity="0.29">ﾈ</tspan><tspan x="0" y="-78" fill="#34d177" opacity="0.21">−</tspan><tspan x="0" y="-91" fill="#34d177" opacity="0.15">5</tspan></text>
-      </g>
-      <g transform="translate(892 0)" opacity="0.47">
-        <text class="rain" style="--period:7.63s;--phase:-4.25s;--end:189px;--rest:158px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾈ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.73">ﾅ</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.50">[</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.31">ﾝ</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.18">ｹ</tspan></text>
-      </g>
-      <g transform="translate(916 0)" opacity="0.82">
-        <text class="rain" style="--period:9.87s;--phase:-0.71s;--end:228px;--rest:194px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">A</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.83">ﾗ</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.67">ｺ</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.53">5</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.40">ｳ</tspan><tspan x="0" y="-65" fill="#34d177" opacity="0.29">ｹ</tspan><tspan x="0" y="-78" fill="#34d177" opacity="0.21">{</tspan><tspan x="0" y="-91" fill="#34d177" opacity="0.15">ｹ</tspan></text>
-      </g>
-      </g>
-      <path d="M29 34H23v57h6M625 16h-12v92h12m281-92h-12m12 0v12m0 80h-12m12 0V96" fill="none" stroke="#58c382" stroke-opacity=".75"/>
-      <path d="M1 24v66" stroke="#6ded9c" stroke-width="3"/>
-      <text x="43" y="57" fill="#e5ffee" font-size="36" font-weight="700" letter-spacing="-1.1">Task Manager API</text>
-      <text x="45" y="90" fill="#83db9f" font-size="20" letter-spacing=".05">Django REST Framework / SQLite / Swagger</text>
-      <g aria-hidden="true">
-      <path d="M707 71h14l13-19h6" fill="none" stroke="#4c9269" stroke-width="1.2"/>
-      <path d="M707 71h14l13-19h6" class="pulse" pathLength="100" style="--period:3.4s;--phase:-0.0s"/>
-      <path d="M800 52h14l12 19h7" fill="none" stroke="#4c9269" stroke-width="1.2"/>
-      <path d="M800 52h14l12 19h7" class="pulse" pathLength="100" style="--period:4.1s;--phase:-1.4s"/>
-      <rect x="644" y="56" width="63" height="29" rx="4" fill="#0a2117" stroke="#4c8c65"/>
-      <text x="675.5" y="75" text-anchor="middle" fill="#a8e3ba" font-size="13" font-weight="700">HTTP</text>
-      <rect x="738" y="37" width="62" height="29" rx="4" fill="#143725" stroke="#7adfa0"/>
-      <text x="769" y="56" text-anchor="middle" fill="#d2ffe0" font-size="13" font-weight="700">AUTH</text>
-      <rect x="832" y="56" width="50" height="29" rx="4" fill="#0a2117" stroke="#4c8c65"/>
-      <text x="857" y="75" text-anchor="middle" fill="#a8e3ba" font-size="13" font-weight="700">API</text>
-      </g>
+      <path d="M141 72h95m-95 25h119m-119 24h77" stroke="#bf8766" stroke-opacity=".74" stroke-width="3" stroke-linecap="round"/>
+      <path d="M286 72h14m-14 25h14m-14 24h14" stroke="#d4a27e" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="335" cy="52" r="24" fill="#f2be93" opacity=".54" transform="translate(4 4)"/>
+      <circle cx="335" cy="52" r="24" fill="#b35b36"/>
+      <path d="M324 51l8 8 13-15" fill="none" stroke="#fff7ee" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M62 93v14m-7-7h14m293 23v14m-7-7h14" stroke="#c37343" stroke-width="1.4" stroke-linecap="round"/>
     </g>
-    <path d="M14 1H913L927 15V107L911 123H1V14Z" fill="none" stroke="#429361" stroke-width="1.4"/>
-    <path d="M14 1h63m792 122h42l16-16" fill="none" stroke="#7cf5a6" stroke-opacity=".77" stroke-width="1.7"/>
+    <rect x="1" y="1" width="418" height="164" rx="15" fill="none" stroke="#edcdb3"/>
   </g>
 </svg>

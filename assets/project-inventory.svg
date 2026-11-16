@@ -1,95 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="928" height="124" viewBox="0 0 928 124" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="166" viewBox="0 0 420 166" role="img" aria-labelledby="title description">
   <title id="title">B2B Inventory Management</title>
-  <desc id="desc">Two organizations connect to the shared application backend.</desc>
+  <desc id="description">Orders from two organizations connect to a shared inventory backend.</desc>
   <defs>
-    <clipPath id="card"><path d="M14 1H913L927 15V107L911 123H1V14Z"/></clipPath>
-    <linearGradient id="background">
-      <stop stop-color="#06130d"/>
-      <stop offset=".57" stop-color="#091c13"/>
-      <stop offset="1" stop-color="#06150f"/>
-    </linearGradient>
-    <radialGradient id="halo">
-      <stop stop-color="#248a4e" stop-opacity=".31"/>
-      <stop offset="1" stop-color="#248a4e" stop-opacity="0"/>
-    </radialGradient>
-    <pattern id="grid" width="15" height="15" patternUnits="userSpaceOnUse">
-      <circle cx="1" cy="1" r="1" fill="#58ae79" opacity=".38"/>
+    <clipPath id="panel"><rect x="1" y="1" width="418" height="164" rx="15"/></clipPath>
+    <pattern id="grid" width="14" height="14" patternUnits="userSpaceOnUse">
+      <path d="M14 .5H.5V14" stroke="#9278c8" stroke-opacity=".11" fill="none"/>
     </pattern>
   </defs>
   <style>
-    .rain { transform: translateY(var(--rest)); animation: fall var(--period) linear var(--phase) infinite; }
-    .pulse { fill: none; stroke: #a3ffbe; stroke-width: 2.2; stroke-linecap: round; stroke-dasharray: 10 90; animation: flow var(--period, 4s) linear var(--phase, 0s) infinite; }
-    @keyframes fall { from { transform: translateY(0); } to { transform: translateY(var(--end)); } }
-    @keyframes flow { to { stroke-dashoffset: -100; } }
+    .packet { stroke-dasharray: 15 85; stroke-linecap: round; animation: route 3.8s linear var(--lag, 0s) infinite; }
+    @keyframes route { to { stroke-dashoffset: -100; } }
 
     @media (prefers-reduced-motion: reduce) {
       * { animation: none !important; }
     }
   </style>
-  <g font-family="'IBM Plex Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace">
-    <g clip-path="url(#card)">
-      <rect width="928" height="124" fill="url(#background)"/>
-      <ellipse cx="763" cy="63" rx="198" ry="95" fill="url(#halo)"/>
-      <path d="M615 0h313v124H615Z" fill="url(#grid)" opacity=".39"/>
-      <g font-size="11" opacity=".25" aria-hidden="true">
-      <g transform="translate(605 0)" opacity="0.60">
-        <text class="rain" style="--period:6.57s;--phase:-5.01s;--end:176px;--rest:118px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾌ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.67">ﾕ</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.40">6</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.21">ｶ</tspan></text>
+  <g font-family="'Bricolage Grotesque', Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Liberation Sans', sans-serif">
+    <g clip-path="url(#panel)">
+      <rect width="420" height="166" rx="16" fill="#f2edfc"/>
+      <rect width="420" height="166" fill="url(#grid)"/>
+      <g fill="none" stroke-width="1.6">
+        <path d="M145 57h36l18 18h89M145 112h36l18-18h89" stroke="#9a88d0"/>
+        <path class="packet" d="M145 57h36l18 18h89" pathLength="100" stroke="#684dba"/>
+        <path class="packet" d="M145 112h36l18-18h89" pathLength="100" stroke="#684dba" style="--lag:-1.7s"/>
       </g>
-      <g transform="translate(631 0)" opacity="0.72">
-        <text class="rain" style="--period:8.48s;--phase:-0.16s;--end:228px;--rest:110px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾂ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.83">ﾜ</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.67">ｼ</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.53">ﾑ</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.40">ｲ</tspan><tspan x="0" y="-65" fill="#34d177" opacity="0.29">÷</tspan><tspan x="0" y="-78" fill="#34d177" opacity="0.21">B</tspan><tspan x="0" y="-91" fill="#34d177" opacity="0.15">3</tspan></text>
+      <g stroke="#9781c9" stroke-width="1.4">
+        <rect x="82" y="34" width="69" height="46" rx="8" fill="#e7ddfc" transform="translate(4 4)" stroke="none"/>
+        <rect x="82" y="89" width="69" height="46" rx="8" fill="#e7ddfc" transform="translate(4 4)" stroke="none"/>
+        <rect x="82" y="34" width="69" height="46" rx="8" fill="#fbf7ff"/>
+        <rect x="82" y="89" width="69" height="46" rx="8" fill="#fbf7ff"/>
       </g>
-      <g transform="translate(659 0)" opacity="0.49">
-        <text class="rain" style="--period:11.38s;--phase:-4.28s;--end:176px;--rest:24px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾚ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.67">ｸ</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.40">8</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.21">ﾓ</tspan></text>
+      <g fill="#876ccc">
+        <path d="M101 52l9-4 9 4-9 4Zm0 2 8 4v8l-8-4Zm10 4 8-4v8l-8 4Z"/>
+        <path d="M101 107l9-4 9 4-9 4Zm0 2 8 4v8l-8-4Zm10 4 8-4v8l-8 4Z"/>
       </g>
-      <g transform="translate(684 0)" opacity="0.50">
-        <text class="rain" style="--period:9.37s;--phase:-4.75s;--end:215px;--rest:147px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">4</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.80">3</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.63">ﾀ</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.47">3</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.34">B</tspan><tspan x="0" y="-65" fill="#34d177" opacity="0.23">3</tspan><tspan x="0" y="-78" fill="#34d177" opacity="0.16">ﾚ</tspan></text>
+      <g fill="#62479e" font-size="12" font-weight="700" text-anchor="middle">
+        <text x="133" y="61">A</text><text x="133" y="116">B</text>
       </g>
-      <g transform="translate(707 0)" opacity="0.74">
-        <text class="rain" style="--period:6.67s;--phase:-5.92s;--end:189px;--rest:133px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾜ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.73">ﾘ</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.50">ﾀ</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.31">ﾅ</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.18">ﾅ</tspan></text>
-      </g>
-      <g transform="translate(734 0)" opacity="0.89">
-        <text class="rain" style="--period:4.85s;--phase:-3.02s;--end:176px;--rest:165px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">}</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.67">}</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.40">ｺ</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.21">ﾆ</tspan></text>
-      </g>
-      <g transform="translate(760 0)" opacity="0.58">
-        <text class="rain" style="--period:5.50s;--phase:-4.67s;--end:215px;--rest:199px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾀ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.80">&gt;</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.63">−</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.47">ﾏ</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.34">B</tspan><tspan x="0" y="-65" fill="#34d177" opacity="0.23">ﾈ</tspan><tspan x="0" y="-78" fill="#34d177" opacity="0.16">ﾁ</tspan></text>
-      </g>
-      <g transform="translate(789 0)" opacity="0.56">
-        <text class="rain" style="--period:12.72s;--phase:-7.02s;--end:176px;--rest:29px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾓ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.67">ﾏ</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.40">−</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.21">ﾍ</tspan></text>
-      </g>
-      <g transform="translate(817 0)" opacity="0.83">
-        <text class="rain" style="--period:4.37s;--phase:-4.23s;--end:215px;--rest:154px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">+</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.80">8</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.63">ﾅ</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.47">5</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.34">ﾝ</tspan><tspan x="0" y="-65" fill="#34d177" opacity="0.23">ﾆ</tspan><tspan x="0" y="-78" fill="#34d177" opacity="0.16">ﾏ</tspan></text>
-      </g>
-      <g transform="translate(839 0)" opacity="0.69">
-        <text class="rain" style="--period:9.17s;--phase:-2.82s;--end:189px;--rest:176px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ｳ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.73">ﾀ</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.50">2</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.31">9</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.18">0</tspan></text>
-      </g>
-      <g transform="translate(865 0)" opacity="0.47">
-        <text class="rain" style="--period:12.13s;--phase:-11.85s;--end:176px;--rest:31px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">1</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.67">ﾓ</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.40">ﾘ</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.21">ﾓ</tspan></text>
-      </g>
-      <g transform="translate(892 0)" opacity="0.92">
-        <text class="rain" style="--period:5.07s;--phase:-2.70s;--end:202px;--rest:66px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾌ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.77">ｶ</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.57">ﾚ</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.40">}</tspan><tspan x="0" y="-52" fill="#34d177" opacity="0.26">ﾜ</tspan><tspan x="0" y="-65" fill="#34d177" opacity="0.17">×</tspan></text>
-      </g>
-      <g transform="translate(916 0)" opacity="0.87">
-        <text class="rain" style="--period:10.41s;--phase:-0.97s;--end:176px;--rest:52px"><tspan x="0" y="0" fill="#c4ffd4" opacity="1.00">ﾈ</tspan><tspan x="0" y="-13" fill="#54fb90" opacity="0.67">÷</tspan><tspan x="0" y="-26" fill="#54fb90" opacity="0.40">C</tspan><tspan x="0" y="-39" fill="#34d177" opacity="0.21">ﾈ</tspan></text>
-      </g>
-      </g>
-      <path d="M29 34H23v57h6M625 16h-12v92h12m281-92h-12m12 0v12m0 80h-12m12 0V96" fill="none" stroke="#58c382" stroke-opacity=".75"/>
-      <path d="M1 24v66" stroke="#6ded9c" stroke-width="3"/>
-      <text x="43" y="57" fill="#e5ffee" font-size="36" font-weight="700" letter-spacing="-1.1">B2B Inventory Management</text>
-      <text x="45" y="90" fill="#83db9f" font-size="20" letter-spacing=".05">Multi-tenant inventory and orders</text>
-      <g aria-hidden="true">
-      <path d="M732 39h31l17 23h30" fill="none" stroke="#4c9269" stroke-width="1.2"/>
-      <path d="M732 39h31l17 23h30" class="pulse" pathLength="100" style="--period:3.4s;--phase:-0.0s"/>
-      <path d="M732 84h31l17-22h30" fill="none" stroke="#4c9269" stroke-width="1.2"/>
-      <path d="M732 84h31l17-22h30" class="pulse" pathLength="100" style="--period:4.1s;--phase:-1.4s"/>
-      <rect x="646" y="24" width="86" height="29" rx="4" fill="#0a2117" stroke="#4c8c65"/>
-      <text x="689" y="43" text-anchor="middle" fill="#a8e3ba" font-size="13" font-weight="700">ORG A</text>
-      <rect x="646" y="69" width="86" height="29" rx="4" fill="#0a2117" stroke="#4c8c65"/>
-      <text x="689" y="88" text-anchor="middle" fill="#a8e3ba" font-size="13" font-weight="700">ORG B</text>
-      <rect x="810" y="47" width="72" height="29" rx="4" fill="#143725" stroke="#7adfa0"/>
-      <text x="846" y="66" text-anchor="middle" fill="#d2ffe0" font-size="13" font-weight="700">API</text>
-      </g>
+      <rect x="273" y="48" width="65" height="71" rx="10" fill="#b29cde" opacity=".43" transform="translate(5 5)"/>
+      <rect x="273" y="48" width="65" height="71" rx="10" fill="#6c51ae"/>
+      <path d="M285 66h41v15h-41Zm0 20h41v15h-41Z" fill="#e0d4f7" opacity=".95"/>
+      <path d="M292 73h22m-22 20h22" stroke="#7257b1" stroke-width="2.1" stroke-linecap="round"/>
+      <circle cx="320" cy="73" r="1.7" fill="#7257b1"/>
+      <circle cx="320" cy="93" r="1.7" fill="#7257b1"/>
+      <path d="M61 125v14m-7-7h14m291-101v15m-7-7h14" stroke="#8165bd" stroke-width="1.4" stroke-linecap="round"/>
     </g>
-    <path d="M14 1H913L927 15V107L911 123H1V14Z" fill="none" stroke="#429361" stroke-width="1.4"/>
-    <path d="M14 1h63m792 122h42l16-16" fill="none" stroke="#7cf5a6" stroke-opacity=".77" stroke-width="1.7"/>
+    <rect x="1" y="1" width="418" height="164" rx="15" fill="none" stroke="#ded0f4"/>
   </g>
 </svg>
