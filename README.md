@@ -1,4 +1,4 @@
-# Amir Arani <img src="assets/profile-accent.svg" width="102" height="22" alt="">
+# Amir Arani (Amirabbas Khadempour arani) <img src="assets/profile-accent.svg" width="102" height="22" alt="">
 
 **Computer science · Backend development · Data analytics**<br>
 Toronto, Canada
